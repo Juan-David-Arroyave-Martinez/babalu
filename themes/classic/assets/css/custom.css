@@ -2,3 +2,1240 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+
+
+ .babalu-header{
+    display: table;
+    position: relative;
+    background: #121212;
+    z-index: 1;
+    width: 100%;
+ }
+
+ .pad-0 {
+    padding: 0 !important;
+}
+
+.babalu-logo img {
+    width: 135px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin-left: 60px;
+    margin-top: 35px;
+}
+
+.babalu-top-nav, .babalu-top-nav a {
+    font-weight: normal;
+    font-size: 12px;
+    color: #CCC;
+    text-transform: uppercase;
+}
+
+.babalu-top-nav {
+    padding: 6px 0 0px;
+    padding-right: 30px;
+    text-align: right;
+    background: -moz-linear-gradient(to right,#121212 0,#333 60%,rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(to right,#121212 0,#333 60%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to right,#121212 0,#333 60%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=â€˜#00919191â€™,endColorstr=â€˜#000 â€™,GradientType=1);
+}
+
+#search_widget{
+    position: relative;
+    display: inline-block;
+    min-width: 200px;
+    max-width: 200px;
+    height: 41px;
+    margin-right: 20px;
+    transition: all .3s;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.search-widget form input[type=text]:focus {
+    outline: 0px solid #2fb5d2;
+    color: #232323;
+    background: #fff;
+}
+
+.slct-lang{
+    display: inline-block;
+    font-size: 12px;
+    color: #CCC;
+    position: relative;
+    vertical-align: bottom;
+}
+
+.slct-lang > li{
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 800;
+    position: relative;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.lst-sublang {
+    position: absolute;
+    bottom: -90px;
+    display: none;
+    left: 0px;
+    list-style: none none;
+    background-color: #fff !important;
+    width: 160px;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px 2px #000;
+}
+
+.lst-sublang > li{
+    margin: 0;
+    padding: 0;
+    border-bottom: solid 1px;
+    text-align: center;
+}
+
+.lst-sublang > li a{
+    display: block;
+    padding: 8px;
+    color: #4e4e4e;
+    font-weight: 400;
+}
+
+.slct-currt{
+    margin-left: 10px;
+}
+
+.lst-log{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+
+.lst-log li a{
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    color: #ccc !important;
+    position: relative;
+    padding-right: 10px;
+}
+
+.lst-log li a:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0;
+    border-right: 1px solid #FFF;
+    height: 10px;
+}
+
+.lst-regs{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+
+.lst-regs li a{
+    color: #fff !important;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: bold;
+    background-color: #ea28c9;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.cont-dwn {
+    position: relative;
+    top: -1.9px;
+}
+
+.icc-dwn{
+    width: 12px;
+}
+
+header .babalu-top-menu {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.babalu-top-menu {
+    position: relative;
+    height: 75px;
+}
+
+.babalu-top-menu .left-menu {
+    padding: 0;
+    list-style: none;
+    width: auto;
+    display: flex;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.babalu-top-menu .left-menu>li:first-child {
+    transition: all .3s;
+    height: 35px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex !important;
+    align-items: center;
+    background: linear-gradient(140deg,#954bbf,#490faf);
+    background-size: 200% 200%;
+    animation: animateGlow 10s ease infinite;
+    -webkit-animation: animateGlow 10s ease infinite;
+    border-radius: 4px;
+}
+
+.babalu-top-menu .left-menu li {
+    display: flex;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+.babalu-top-menu .left-menu>li:first-child a {
+    color: #fff !important;
+}
+
+.babalu-top-menu .left-menu li a {
+    color: #CCC !important;
+    font-family: 'Josefin Sans',sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    cursor: pointer;
+    padding: 30px 10px;
+}
+
+.babalu-top-menu .minicart-wrapper {
+    position: relative;
+    top: 27px;
+    float: right;
+    margin: 0px 0 0;
+    padding: 0 14px;
+}
+
+.shw-crt{
+    position: relative;
+    width: auto;
+    height: 25px;
+    outline: 0;
+    background-color: #383838;
+    border-radius: 4px;
+    padding: 18px 28px 15px 22px;
+    font-size: 13.6px !important;
+    font-weight: 900;
+    text-align: center;
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.cust-spin{
+    background: #a03543;
+    border-radius: 50%;
+    color: #fff;
+    padding: 2px 4px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: -8px;
+    right: 5px;
+    height: 17px;
+    line-height: 16px;
+    width: 17px;
+    font-size: 14px;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.cust-icart{
+    margin-right: 7px;
+}
+
+.catalog-sales-bar {
+    cursor: pointer;
+    background: linear-gradient(270deg,#ff2dc0,#ff9a2d) 0 0 / 200% 200%;
+    background-size: 200% 200%;
+    text-align: center;
+    height: 50px;
+    -webkit-animation: NvcCtaAnimation 30s ease infinite;
+    -moz-animation: NvcCtaAnimation 30s ease infinite;
+    animation: NvcCtaAnimation 30s ease infinite;
+    box-shadow: 0 0 30px 0 #000;
+    z-index: 1;
+    position: relative;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog-sales-bar .cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-sales-bar .text {
+    float: left;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Josefin Sans',sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    height: 50px;
+    font-weight: 800;
+}
+
+.catalog-sales-bar .cont-button {
+    float: left;
+}
+
+.catalog-sales-bar .button {
+    display: table;
+    padding: 7px 20px;
+    background-color: #fff;
+    color: #7b7b7b;
+    border-radius: 3px;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    float: left;
+    text-transform: uppercase;
+}
+
+#wrapper {
+    padding: 0px;
+    background: #fff;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0) !important;
+}
+
+.carousel .carousel-inner{
+    height: calc(100vh - 175px);
+    overflow: hidden;
+}
+
+.cont-ppl {
+    width: 100%;
+    overflow: hidden;
+}
+
+.babalu-home-products {
+    display: table;
+    padding: 0 58px;
+    background: #f7f7f7;
+    width: 100%;
+}
+
+.pro-title {
+    text-transform: uppercase;
+    margin: 72px 0;
+    font-size: 19px;
+    letter-spacing: 12px;
+    font-weight: 600;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.carousel{
+    margin-bottom: 0px !important;
+}
+
+.carousel-inner{
+    margin-bottom: 0px !important;
+}
+
+.col-products:first-child {
+    width: 41%;
+}
+.col-products {
+    float: left;
+}
+
+.col-products:nth-child(2) {
+    margin: 0 22px;
+    width: -moz-calc(31% - 44px);
+    width: -webkit-calc(31% - 44px);
+    width: -o-calc(31% - 44px);
+    width: calc(31% - 44px);
+}
+
+.col-products:last-child {
+    width: 28%;
+}
+
+.col-products a {
+    display: block;
+    transition: all .3s;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.col-products a:before {
+    transition: all .3s;
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-size: contain;
+    z-index: 9;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.col-products a:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transition: all .3s;
+}
+
+.col-products img {
+    width: 100%;
+    transition: all .3s;
+}
+
+.new-arrivals {
+    display: flex;
+    height: 488px;
+}
+
+.new-arrivals div.left {
+    position: relative;
+}
+
+.new-arrivals img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.new-arrivals div.right {
+    height: 488px;
+    overflow: hidden;
+}
+
+.new-arrivals div{
+    padding: 0;
+}
+
+.babalu-brands {
+    background: #f7f7f7;
+    display: table;
+    width: 100%;
+}
+
+.babalu-brands h2 {
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    font-size: 14px;
+    padding: 12px 0;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    margin: 70px auto;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.babalu-brands .brand {
+    max-width: 140px;
+    height: auto;
+    margin: 0 auto 105px;
+    display: block;
+}
+
+.babalu-sellers {
+    display: flex;
+}
+
+.babalu-sellers .sellers-white{
+    color: #FFF;
+}
+
+.babalu-sellers .sellers-white p{
+    color: #FFF;
+}
+
+.babalu-sellers .sellers-col {
+    min-height: 611px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sll-wht-bg{
+    background-image: url(../img/new-venta-catalogo.jpg);
+    background-position: center center;
+    min-height: 480px;
+}
+
+.babalu-sellers h3 {
+    font-size: 18.5px;
+    line-height: 28px;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+    max-width: 70%;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 900;
+    margin: 15px auto 80px;
+}
+
+.babalu-sellers p {
+    font-size: 11.3px;
+    padding: 0 50px;
+    line-height: 22px;
+    font-weight: 900 !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.babalu-sellers div.sellers-col:nth-child(2) h3 {
+    margin-top: 98px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.babalu-sellers div.sellers-col:nth-child(2) p {
+    padding: 0 89px;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.babalu-sellers div.sellers-col:nth-child(2) .square-lnk {
+    margin: 100px auto 0 !important;
+    color: #000;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border: 2px solid #000;
+    padding: 5px 24.8px;
+}
+
+.babalu-sellers .sellers-white h3:after {
+    border-top: 2px solid #FFF;
+}
+.babalu-sellers h3:after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 1px;
+    border-top: 2px solid #000;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.babalu-sellers .square-lnk {
+    margin: 32% auto 0 !important;
+    display: table;
+}
+
+.lnk-svg-sell{
+    background: white;
+    color: black;
+    font-weight: 800;
+    padding: 6.5px 27px;
+}
+
+.babalu-video-content {
+    display: table;
+    background: #fff;
+    width: 100%;
+}
+
+.babalu-video-content .babalu-videos-title {
+    text-transform: uppercase;
+    padding: 52px 58px 42px;
+    font-size: 19px;
+    letter-spacing: 12px;
+    font-weight: 600;
+    background: #f7f7f7;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.babalu-video-content .babalu-videos-title span:nth-child(2) {
+    float: right;
+    letter-spacing: 2px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.babalu-video-content .cms-cont-video .cont-videos {
+    margin: 0;
+}
+
+.cms-cont-video .cont-videos .row {
+    display: flex;
+}
+
+.mar-0 {
+    margin: 0 !important;
+}
+
+.cms-cont-video .cont-videos .video.left {
+    width: 50%;
+}
+
+.cms-cont-video .cont-videos .two-videos .video {
+    height: 50%;
+}
+
+.cms-cont-video .cont-videos .video.right {
+    width: 30%;
+}
+
+.babalu-video-content .babalu-videos-title span:nth-child(2) a {
+    color: #333;
+}
+
+.plsqr-icc{
+    width: 16px;
+    margin-right: 3px;
+    position: relative;
+    top: -2px;
+}
+
+.social-section.points-sale {
+    background: #fff;
+    cursor: pointer;
+}
+.social-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+}
+
+.social-section h2 {
+    width: 40%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 15px;
+    font-weight: 600;
+    padding: 13px 20px;
+    margin: 20px auto 50px;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.social-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.social-section.points-sale a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 600;
+}
+
+.social-section.points-sale ul li {
+    width: 100% !important;
+    height: auto !important;
+    display: inline-block;
+    margin: 0 auto !important;
+}
+
+.social-section ul li {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.babalu-contact {
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.contact-content, .contact-block {
+    padding: 60px 0;
+}
+
+.contact-content h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.contact-content p {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #999;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.contact-content ul {
+    font-family: 'Titillium Web',sans-serif;
+    margin: 25px auto;
+    list-style: none;
+    padding-left: 15%;
+}
+
+.contact-content ul li {
+    text-align: left;
+    font-size: 16.5px;
+    color: #505050;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 1px;
+    margin-bottom: 3.7px;
+}
+
+.contact-content ul li a{
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.icc-clndr {
+    width: 16px;
+    position: relative;
+    top: -2px;
+    margin-right: 4px;
+}
+
+.icc-cllaw {
+    width: 13px;
+    position: relative;
+    top: -1px;
+    margin-right: 7px;
+}
+
+.icc-envml {
+    width: 16px;
+    margin-right: 6px;
+}
+
+.icc-mpnt {
+    width: 14px;
+    margin-right: 5px;
+}
+
+#main .page-footer {
+    margin-bottom: 0px !important;
+}
+
+.foot-cust{
+    display: table;
+    background: #121212;
+    width: 100%;
+    font-family: 'Josefin Sans',sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+.babalu-footer {
+    padding: 75px 80px 120px;
+    display: table;
+    width: 100%;
+}
+
+.babalu-footer h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.babalu-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.babalu-footer ul li {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    margin: 2px 0;
+    font-family: 'Titillium Web',sans-serif;
+    position: relative;
+}
+
+.babalu-footer ul li strong{
+    font-family: 'Titillium Web',sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+.babalu-footer  ul li a {
+    color: #FFF;
+    font-size: 15.5px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-family: 'Titillium Web',sans-serif;
+}
+
+.babalu-footer  ul li.ico-babalu:before {
+    content: "";
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: -29px;
+    background: url(../img/logo-tiny.png);
+    background-size: contain;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.babalu-footer div:nth-child(3) {
+    margin-right: 50px;
+}
+
+.babalu-footer  ul li.ico-mark:before{
+    content: "";
+    width: 14px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: -23px;
+    background: url(../img/map-marker.svg);
+    background-size: contain;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.babalu-footer  ul li.ico-calendar:before{
+    content: "";
+    width: 14px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: -23px;
+    background: url(../img/calendar-with-spring-binder-and-date-blocks.svg);
+    background-size: contain;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.babalu-footer  ul li.ico-phone:before{
+    content: "";
+    width: 14px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: -23px;
+    background: url(../img/call-answer.svg);
+    background-size: contain;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.babalu-footer  ul li.ico-email:before{
+    content: "";
+    width: 14px;
+    height: 20px;
+    position: absolute;
+    top: -1px;
+    left: -23px;
+    background: url(../img/envelope-of-white-paper.svg);
+    background-size: contain;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.cont-credit-cards {
+    position: absolute;
+    right: 0;
+    margin: 10px 30px;
+    bottom: 10px;
+}
+
+.cont-credit-cards a {
+    display: block;
+}
+
+.copyright {
+    padding: 0 95px;
+    margin: 0;
+    line-height: 11px;
+    text-transform: uppercase;
+    color: #bfbfbf;
+    font-size: 8.5px;
+    letter-spacing: 1px;
+    background-color: #121212;
+    position: relative;
+    z-index: 9;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.babalu-second-footer {
+    background-color: #FFF;
+    padding: 25px 0 25px 56px;
+    position: relative;
+    z-index: 9;
+}
+
+.babalu-second-footer ul {
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-inline-start: 40px;
+}
+
+.babalu-second-footer ul li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.babalu-second-footer a {
+    color: #000;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.babalu-second-footer li:after {
+    content: "";
+    border-right: 1px solid #000;
+    margin-left: 20px;
+}
+
+.txt-short{
+    display: none;
+}
+
+.mob-cats{
+    display: none;
+}
+
+#footer {
+    padding-top: 0px;
+}
+
+
+
+
+
+
+@media (max-width: 850px){
+    .babalu-logo img{
+        width: 80px !important;
+        margin: 10px auto;
+    }
+
+    #search_widget{
+        display: none;
+    }
+
+    .txt-ext{
+        display: none;
+    }
+
+    .txt-short{
+        display: inline-table;
+    }
+
+    .babalu-top-nav{
+        padding: 5px 0px;
+        text-align: center;
+        background: #333;
+        margin-top: 15px;
+    }
+
+    .slct-lang{
+        margin-bottom: 0px;
+    }
+
+    .lst-log{
+        margin-bottom: 0px;
+    }
+
+    .lst-log li a{
+        font-size: 10px;
+    }
+
+    .lst-regs{
+        margin-bottom: 0px;
+    }
+
+    .lst-regs li a{
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .babalu-top-menu .minicart-wrapper{
+        position: absolute;
+        top: -80px;
+        right: 0px;
+    }
+
+    .shw-crt{
+        padding: 18px 0px 15px 9px;
+    }
+
+    .babalu-top-menu .left-menu{
+        display: none;
+    }
+
+    .catalog-sales-bar .cont-button{
+        display: none;
+    }
+
+    .catalog-sales-bar .text {
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
+
+    .catalog-sales-bar.center {
+        width: 80%;
+        margin: auto;
+        border-radius: 6px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        top: 356px;
+        transform: translate(-50%,0%);
+        margin-bottom: 40px !important;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.50);
+    }
+
+    header .babalu-top-menu{
+        display: none;
+    }
+
+    .carousel .carousel-inner {
+        height: auto;
+        overflow: hidden;
+    }
+
+    .slid-hom {
+        margin-bottom: 90px;
+    }
+
+    .pro-title{
+        margin: 40px auto;
+        font-size: 17px;
+        text-align: center;
+        letter-spacing: 7px;
+        line-height: 25px;
+        width: 80%;
+    }
+
+    .new-arrivals img {
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .new-arrivals {
+        display: block;
+        height: auto;
+    }
+
+    .babalu-brands h2{
+        width: 90%;
+    }
+
+    .babalu-brands .brand {
+        width: 90%;
+        margin: 0 auto 105px;
+        display: block;
+    }
+
+    .desck-cats{
+        display: none;
+    }
+
+    .mob-cats{
+        display: block;
+    }
+
+    .mob-cats .col-xs-6 {
+        padding-right: 0;
+        padding-left: 0;
+        height: 180px;
+    }
+
+    .mob-cats .col-xs-6 a {
+        display: flex;
+        width: 100%;
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .babalu-home-products{
+        padding: 0px;
+    }
+
+    .babalu-sellers .sellers-col{
+        min-height: 480px;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .babalu-sellers h3 {
+        font-weight: 900;
+        margin: 15px auto 80px;
+        text-align: center;
+        padding: 0px 10px 14px;
+    }
+
+    .babalu-video-content .babalu-videos-title{
+        padding: 30px 10px;
+        letter-spacing: 1px;
+    }
+
+    .hid-mobl{
+        display: none !important;
+    }
+
+    .vid-full-mob{
+        width: 100% !important;
+        height: 233px !important;
+    }
+
+    .social-section h2{
+        width: 100% !important;
+        margin: 20px 0 !important;
+    }
+
+    .social-section ul li{
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 20px !important;
+    }
+
+    .babalu-footer ul {
+        display: table;
+        margin: auto;
+        text-align: center;
+    }
+
+    .babalu-footer ul li {
+        display: table;
+        margin: auto;
+    }
+
+    .babalu-footer {
+        padding: 30px 10px !important;
+        display: table;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .babalu-footer h2 {
+        text-align: center;
+    }
+
+    .cont-credit-cards {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

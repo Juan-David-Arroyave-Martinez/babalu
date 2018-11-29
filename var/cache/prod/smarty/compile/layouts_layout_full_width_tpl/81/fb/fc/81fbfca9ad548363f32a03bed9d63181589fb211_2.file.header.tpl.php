@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-14 14:37:38
+/* Smarty version 3.1.32, created on 2018-11-28 19:53:58
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bec79822300e2_98877978',
+  'unifunc' => 'content_5bff38a70168b1_15833253',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81fbfca9ad548363f32a03bed9d63181589fb211' => 
     array (
       0 => '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl',
-      1 => 1542223694,
+      1 => 1543380536,
       2 => 'file',
     ),
   ),
@@ -20,138 +20,117 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bec79822300e2_98877978 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bff38a70168b1_15833253 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12685430725bec7982201a19_74104599', 'header_banner');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6301332035bff38a6f2e906_53164165', 'header_banner');
 ?>
 
 
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1330036835bec7982206ca3_42660612', 'header_nav');
-?>
 
 
-<?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_356226795bec7982210503_53630192', 'header_top');
-?>
 
 <?php }
 /* {block 'header_banner'} */
-class Block_12685430725bec7982201a19_74104599 extends Smarty_Internal_Block
+class Block_6301332035bff38a6f2e906_53164165 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header_banner' => 
   array (
-    0 => 'Block_12685430725bec7982201a19_74104599',
+    0 => 'Block_6301332035bff38a6f2e906_53164165',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
-  <div class="header-banner">
-    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayBanner'),$_smarty_tpl ) );?>
+<div class="babalu-header">
+    <div class="col-sm-2 col-md-2 babalu-logo">
+        <h1>
+            <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+">
+                <img class="logo img-responsive" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['logo'], ENT_QUOTES, 'UTF-8');?>
+" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['name'], ENT_QUOTES, 'UTF-8');?>
+">
+            </a>
+        </h1>
+    </div>
+    <div class="col-sm-10 col-md-10 pad-0">
+        <div class="col-md-12 babalu-top-nav">
+            <div id="search_widget" class="search-widget" data-search-controller-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_controller_url']->value, ENT_QUOTES, 'UTF-8');?>
+">
+                <form method="get" action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_controller_url']->value, ENT_QUOTES, 'UTF-8');?>
+">
+                    <input type="hidden" name="controller" value="search">
+                    <input type="text" name="s" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_string']->value, ENT_QUOTES, 'UTF-8');?>
+" placeholder="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search our catalog','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+" aria-label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+">
+                    <button type="submit">
+                        <i class="material-icons search">&#xE8B6;</i>
+                        <span class="hidden-xl-down"><?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
+</span>
+                    </button>
+                </form>
+            </div>
+            <ul class="slct-lang">
+                <li>ESPAÑOL <span class="cont-dwn"><img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>
+/custom/down-arrow.svg" class="icc-dwn"></span>
+                    <ul class="lst-sublang">
+                        <li><a href="#">ESPAÑOL</a></li>
+                        <li><a href="#">ENGLISH</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="slct-lang slct-currt">
+                <li><span class="txt-ext">PESOS COLOMBIANOS</span><span class="txt-short">COP</span> <span class="cont-dwn"><img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>
+/custom/down-arrow.svg" class="icc-dwn"></span>
+                    <ul class="lst-sublang">
+                        <li><a href="#"><span class="txt-ext">PESOS COLOMBIANOS</span><span class="txt-short">COP</span></a></li>
+                        <li><a href="#">VALORES EN DÓLARES</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="lst-log">
+                <li>
+                    <a href="#">INICIAR SESIÓN</a>
+                </li>
+            </ul>
+            <ul class="lst-regs">
+                <li><a href="#">REGISTRARME</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-12 babalu-top-menu">
+            <ul class="left-menu">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">VENTAS MAYORISTAS</a></li>
+                <li><a href="#">OUTLET MAYORISTA</a></li>
+                <li><a href="#">VENTAS MAYORISTAS INTERNACIONALES</a></li>
+                <li><a href="#">VENTAS POR UNIDAD</a></li>
+            </ul>
+            <div class="minicart-wrapper">
+                <a href="#" class="shw-crt"><i class="material-icons shopping-cart cust-icart">shopping_cart</i> <span class="txt-ext">VER CARRITO</span></a>
+                <span class="cart-products-count cust-spin">0</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="top-container"> 
+    <div class="widget block block-static-block">
+        <div class="hidden-xs hidden-sm">
+            <div class="catalog-sales-bar center">
+                <div class="cont catalog-sales">
+                    <div class="center text">Novedosa Venta por Catálogo</div>
+                    <div class="center cont-button">
+                        <div class="center button">¡Clic aquí!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-  </div>
 <?php
 }
 }
 /* {/block 'header_banner'} */
-/* {block 'header_nav'} */
-class Block_1330036835bec7982206ca3_42660612 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'header_nav' => 
-  array (
-    0 => 'Block_1330036835bec7982206ca3_42660612',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-  <nav class="header-nav">
-    <div class="container">
-      <div class="row">
-        <div class="hidden-sm-down">
-          <div class="col-md-5 col-xs-12">
-            <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNav1'),$_smarty_tpl ) );?>
-
-          </div>
-          <div class="col-md-7 right-nav">
-              <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNav2'),$_smarty_tpl ) );?>
-
-          </div>
-        </div>
-        <div class="hidden-md-up text-sm-center mobile">
-          <div class="float-xs-left" id="menu-icon">
-            <i class="material-icons d-inline">&#xE5D2;</i>
-          </div>
-          <div class="float-xs-right" id="_mobile_cart"></div>
-          <div class="float-xs-right" id="_mobile_user_info"></div>
-          <div class="top-logo" id="_mobile_logo"></div>
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-  </nav>
-<?php
-}
-}
-/* {/block 'header_nav'} */
-/* {block 'header_top'} */
-class Block_356226795bec7982210503_53630192 extends Smarty_Internal_Block
-{
-public $subBlocks = array (
-  'header_top' => 
-  array (
-    0 => 'Block_356226795bec7982210503_53630192',
-  ),
-);
-public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
-?>
-
-  <div class="header-top">
-    <div class="container">
-       <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-            <?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] == 'index') {?>
-              <h1>
-                <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-">
-                  <img class="logo img-responsive" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['logo'], ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['name'], ENT_QUOTES, 'UTF-8');?>
-">
-                </a>
-              </h1>
-            <?php } else { ?>
-                <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-">
-                  <img class="logo img-responsive" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['logo'], ENT_QUOTES, 'UTF-8');?>
-" alt="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['shop']->value['name'], ENT_QUOTES, 'UTF-8');?>
-">
-                </a>
-            <?php }?>
-        </div>
-        <div class="col-md-10 col-sm-12 position-static">
-          <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayTop'),$_smarty_tpl ) );?>
-
-          <div class="clearfix"></div>
-        </div>
-      </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
-        <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
-        <div class="js-top-menu-bottom">
-          <div id="_mobile_currency_selector"></div>
-          <div id="_mobile_language_selector"></div>
-          <div id="_mobile_contact_link"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayNavFullWidth'),$_smarty_tpl ) );?>
-
-<?php
-}
-}
-/* {/block 'header_top'} */
 }

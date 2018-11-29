@@ -54,6 +54,10 @@ global_settings:
    to_enable:
      - ps_linklist
   hooks:
+    custom_hooks:
+      - name: displaySlider
+        title: displaySlider
+        description: Showslider in home
     modules_to_hook:
       displayNav1:
         - ps_contactinfo
@@ -70,6 +74,8 @@ global_settings:
         - ps_featuredproducts
         - ps_banner
         - ps_customtext
+      displaySlider:
+        - ps_imageslider 
       displayFooterBefore:
         - ps_emailsubscription
         - ps_socialfollow
@@ -90,6 +96,7 @@ global_settings:
         - ps_featuredproducts
       displayCrossSellingShoppingCart:
         - ps_featuredproducts
+
 
   image_types:
     cart_default:

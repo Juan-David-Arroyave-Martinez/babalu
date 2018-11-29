@@ -1591,7 +1591,7 @@
   ),
   'CmsController' => 
   array (
-    'path' => '',
+    'path' => 'override/controllers/front/CmsController.php',
     'type' => 'class',
     'override' => false,
   ),
@@ -2647,7 +2647,7 @@
   ),
   'IndexController' => 
   array (
-    'path' => '',
+    'path' => 'override/controllers/front/IndexController.php',
     'type' => 'class',
     'override' => false,
   ),
