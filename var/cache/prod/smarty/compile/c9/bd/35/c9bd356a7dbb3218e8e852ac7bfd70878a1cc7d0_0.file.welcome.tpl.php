@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-27 23:13:14
+/* Smarty version 3.1.32, created on 2018-12-10 22:56:00
   from '/home4/makemark/public_html/makemark/babalu_prestashop/modules/welcome/views/contents/welcome.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bfe15da609a93_83721714',
+  'unifunc' => 'content_5c0f3550cbf0a8_83980800',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfe15da609a93_83721714 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0f3550cbf0a8_83980800 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <div class="onboarding-welcome">
   <i class="material-icons onboarding-button-shut-down">close</i>

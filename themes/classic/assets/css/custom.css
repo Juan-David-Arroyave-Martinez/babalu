@@ -946,12 +946,323 @@ header .babalu-top-menu {
     padding-top: 0px;
 }
 
+.white-buttons {
+    display: none;
+    margin: auto;
+    width: 100%;
+    margin-top: 0px;
+    background: #000;
+}
+
+.white-buttons ul {
+    margin: 0 auto;
+    padding: 4px 0;
+    display: table;
+}
+
+.white-buttons ul li {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.white-buttons ul li a {
+    background: #fff;
+    margin: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 12px;
+    height: 33px;
+    font-family: 'Josefin Sans',sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 700;
+    line-height: 13px;
+    border-radius: 5px;
+}
+
+.search-mobl{
+    display: none;
+    position: absolute;
+    top: -75px;
+    right: 59px;
+    width: 23px;
+}
+
+.srch-nav-mob{
+    display: none;
+    position: absolute;
+    top: -77px;
+    left: 3px;
+}
+
+.h-icon div {
+    width: 34px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+.toggle-main-menu span {
+    font-size: 11px;
+    color: #ccc;
+    font-weight: 600;
+    font-family: 'Josefin Sans',sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    top: -5px;
+}
+
+.babalu-category-image {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 280px;
+    background-size: cover;
+}
+
+.babalu-category-description {
+    margin-left: 175px;
+    color: #eee;
+}
+
+.babalu-category-description h1 {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 7px !important;
+    color: #121212 !important;
+    font-size: 48px;
+    font-family: 'Josefin Sans',sans-serif;
+    margin-bottom: 18px;
+    margin-left: 70px;
+    margin-top: 70px;
+}
+
+.category-title {
+    margin: 0;
+}
+
+.category-description p{
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    line-height: 28px;
+    font-size: 13.5px;
+    font-weight: 300;
+    margin-left: 70px;
+    font-family: 'Josefin Sans',sans-serif;
+    color: #121212 !important;
+}
+
+.category-description p > strong{
+    font-weight: 700;
+}
+
+.babalu-category-description h1:before {
+    content: "";
+    position: absolute;
+    width: 42px;
+    height: 5px;
+    left: -68px;
+    bottom: 14px;
+    background: #eee;
+}
+
+.columns {
+    margin-top: 0;
+    display: flex;
+}
+
+.list-category-left {
+    position: relative;
+    width: 22%;
+}
+
+.babalu-category-list-fixed {
+    background-color: #fff;
+    padding-top: 125px;
+    padding-left: 10px;
+    height: 100%;
+    top: 0;
+    box-shadow: 7px 7px 7px rgba(0,0,0,.03);
+    position: relative;
+    z-index: 9;
+    transition: left .3s;
+}
+
+.babalu-category-list-fixed.affix {
+    top: 125px;
+    padding-top: 0;
+    width: inherit;
+}
+
+.babalu-category-list-fixed .babalu-category-list-ul, .babalu-category-list-fixed .babalu-category-list-ul>ul {
+    list-style: none;
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+ul.babalu-category-list-ul {
+    overflow: auto;
+    height: calc(100vh - 125px);
+    width: 100%;
+}
+
+.babalu-category-list-fixed .babalu-category-list-ul>li a {
+    font-weight: 700;
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 16px;
+    width: 100%;
+    color: #ff0095;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.babalu-category-list-fixed .babalu-category-list-ul, .babalu-category-list-fixed .babalu-category-list-ul>ul {
+    list-style: none;
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+.babalu-category-list-fixed>ul li {
+    line-height: 17px;
+}
+
+.babalu-category-list-fixed>ul li a {
+    font-size: 11.5px;
+    font-weight: 500;
+}
+.babalu-category-list-fixed a {
+    color: #000;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.main-content-padding {
+    padding-top: 105px;
+    background-color: #ececec;
+    width: 78%;
+}
+
+.babalu-category-helper {
+    display: table;
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    z-index: 99;
+}
+
+.babalu-category-search {
+    padding: 0;
+}
+
+.babalu-category-search .block-search {
+    margin-left: 60px;
+    margin-top: 10px;
+    width: calc(100% - 60px);
+}
+
+.babalu-breadcrumbs {
+    padding: 0;
+}
+
+.babalu-breadcrumbs .breadcrumb {
+    text-align: right;
+    margin: 41px 80px 0 115px;
+}
+
+.babalu-breadcrumbs .breadcrumb ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+.babalu-breadcrumbs .breadcrumb ol li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0 10px;
+    font-size: 12px;
+    position: relative;
+    font-size: 11px;
+}
+
+.babalu-breadcrumbs .breadcrumb ol li a {
+    color: #000;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+.columns-cat {
+    margin-top: 0;
+    display: flex;
+}
+
+.babalu-category-helper:after {
+    width: calc(100% - 156px);
+    height: 1px;
+    position: absolute;
+    content: "";
+    background: #b0b0b0;
+    left: 100px;
+    bottom: 0;
+}
+
+input.babalu-search-input {
+    font-family: 'Josefin Sans',sans-serif;
+    padding-left: 40px;
+    height: 25px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    background: transparent;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 @media (max-width: 850px){
+    .srch-nav-mob{
+        display: block;
+    }
+
+    .search-mobl{
+        display: block;
+    }
+    .white-buttons {
+        display: block;
+    }
+
     .babalu-logo img{
         width: 80px !important;
         margin: 10px auto;
@@ -1027,14 +1338,15 @@ header .babalu-top-menu {
         height: 40px;
         position: absolute;
         left: 50%;
-        top: 356px;
+        top: 439px;
         transform: translate(-50%,0%);
         margin-bottom: 40px !important;
         box-shadow: 0 0 10px 0 rgba(0,0,0,0.50);
     }
 
     header .babalu-top-menu{
-        display: none;
+        display: block;
+        height: auto;
     }
 
     .carousel .carousel-inner {
@@ -1163,79 +1475,11 @@ header .babalu-top-menu {
 
     .babalu-footer h2 {
         text-align: center;
+        margin-top: 28px;
+        margin-bottom: 28px;
     }
 
     .cont-credit-cards {
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

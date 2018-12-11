@@ -55,17 +55,54 @@
       <section id="wrapper">
         {hook h="displayWrapperTop"}
         <div class="cont-ppl">
-          {block name='breadcrumb'}
-            {include file='_partials/breadcrumb.tpl'}
-          {/block}
-
+			{if $category}
+         <style>
+         .catalog-sales-bar{
+           display: none;
+         }
+         </style>
+        <div class="category-image babalu-category-image" style="background-image: url({$urls.base_url}img/c/{$category.id}.jpg);">
+          <div class="babalu-category-description">
+          <h1 class="category-title">{$category.name}</h1>
+          {if $category.description}
+            <div id="category-description" class="category-description">{$category.description nofilter}</div>
+          {/if}
+          </div>
+        </div>
+        
+        {/if}
+          <div class="columns-cat">
+              {if $category}
+              <div class="babalu-category-helper">
+                  <div class="col-md-4 col-sm-4 babalu-category-search">
+                    <div class="block block-search">
+                        <div class="block block-content">
+                            <form method="get" action="{$search_controller_url}" class="srch-bread">
+                                <input type="hidden" name="controller" value="search">
+                                <button type="submit">
+                                    <i class="material-icons search"></i>
+                                </button>
+                                <input class="babalu-search-input" type="text" name="s" value="{$search_string}" placeholder="¿Qué Estás Buscando?" aria-label="{l s='Search' d='Shop.Theme.Catalog'}">
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8 col-sm-8 babalu-breadcrumbs">
+                      {block name='breadcrumb'}
+                      {include file='_partials/breadcrumb.tpl'}
+                    {/block}
+                  </div>
+                </div>
+                {/if}
           {block name="left_column"}
-            <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
+            <div id="left-column" class="list-category-left">
               {if $page.page_name == 'product'}
                 {hook h='displayLeftColumnProduct'}
               {else}
-                {hook h="displayLeftColumn"}
-              {/if}
+                <div class="babalu-category-list-fixed affix-top">
+                <ul class="babalu-category-list-ul"><li><a href="https://babalufashion.com/marcas.html" data-category-id="3">Marcas</a></li><ul><li><a href="https://babalufashion.com/marcas/babalu.html" data-category-id="15">Babalú</a></li><li><a href="https://babalufashion.com/marcas/inizio.html" data-category-id="16">Inizio</a></li><li><a href="https://babalufashion.com/marcas/tarrao.html" data-category-id="17">Tarrao</a></li></ul><li><a href="https://babalufashion.com/mujeres.html" data-category-id="4">Mujeres</a></li><ul><li><a href="https://babalufashion.com/mujeres/ropa-deportiva.html" data-category-id="6">Ropa deportiva femenina</a></li><li><a href="https://babalufashion.com/mujeres/linea-ciclismo-femenina.html" data-category-id="136">Línea ciclismo femenina</a></li><li><a href="https://babalufashion.com/mujeres/vestidos-de-bano.html" data-category-id="134">Vestidos de Baño</a></li><li><a href="https://babalufashion.com/mujeres/lingerie.html" data-category-id="7">Lingerie</a></li></ul><li><a href="https://babalufashion.com/hombres.html" data-category-id="8">Hombres</a></li><ul><li><a href="https://babalufashion.com/hombres/ropa-deportiva-masculina.html" data-category-id="9">Ropa deportiva masculina</a></li><li><a href="https://babalufashion.com/hombres/linea-ciclismo-masculina.html" data-category-id="137">Linea ciclismo masculina</a></li><li><a href="https://babalufashion.com/hombres/ropa-interior-microfibra.html" data-category-id="10">Ropa interior microfibra</a></li><li><a href="https://babalufashion.com/hombres/ropa-interior-algodon.html" data-category-id="19">Ropa interior algodón</a></li></ul><li><a href="https://babalufashion.com/ropa-interior-infantil.html" data-category-id="129">Infantil</a></li><ul><li><a href="https://babalufashion.com/ropa-interior-infantil/ropa-interior-nina.html" data-category-id="138">Ropa interior Niña</a></li><li><a href="https://babalufashion.com/ropa-interior-infantil/ropa-interior-nino.html" data-category-id="139">Ropa interior Niño</a></li></ul><li><a href="https://babalufashion.com/otras-categorias.html" data-category-id="11">Otras categorías</a></li><ul><li><a href="https://babalufashion.com/otras-categorias/accesorios.html" data-category-id="12">Accesorios deportivos</a></li><li><a href="https://babalufashion.com/otras-categorias/outlet-mayorista.html" data-category-id="130">Outlet mayorista</a></li><li><a href="https://babalufashion.com/otras-categorias/ver-todos-los-productos.html" data-category-id="131">Ver todos los productos</a></li></ul><li><a href="https://babalufashion.com/nueva-coleccion.html" data-category-id="135">Nueva colección</a></li><ul></ul></ul>
+              </div>
+                {/if} 
             </div>
           {/block}
 
@@ -78,7 +115,7 @@
               {hook h="displayContentWrapperBottom"}
             </div>
           {/block}
-
+        </div>
           {block name="right_column"}
             <div id="right-column" class="col-xs-12 col-sm-4 col-md-3">
               {if $page.page_name == 'product'}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-28 19:53:58
+/* Smarty version 3.1.32, created on 2018-12-10 23:55:09
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bff38a70168b1_15833253',
+  'unifunc' => 'content_5c0f432db5cfc8_59796295',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81fbfca9ad548363f32a03bed9d63181589fb211' => 
     array (
       0 => '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl',
-      1 => 1543380536,
+      1 => 1543590564,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bff38a70168b1_15833253 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0f432db5cfc8_59796295 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6301332035bff38a6f2e906_53164165', 'header_banner');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13609003275c0f432db57395_60662277', 'header_banner');
 ?>
 
 
@@ -32,12 +32,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6301332035bff38a6f
 
 <?php }
 /* {block 'header_banner'} */
-class Block_6301332035bff38a6f2e906_53164165 extends Smarty_Internal_Block
+class Block_13609003275c0f432db57395_60662277 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header_banner' => 
   array (
-    0 => 'Block_6301332035bff38a6f2e906_53164165',
+    0 => 'Block_13609003275c0f432db57395_60662277',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -111,6 +111,25 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                 <a href="#" class="shw-crt"><i class="material-icons shopping-cart cust-icart">shopping_cart</i> <span class="txt-ext">VER CARRITO</span></a>
                 <span class="cart-products-count cust-spin">0</span>
             </div>
+            <a href="#" class="search-mobl"><img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>
+/custom/msc-searcher.svg"></a>
+            <button type="button" class="toggle-main-menu pull-left navbar-toggle collapsed srch-nav-mob"><div class="h-icon"><div></div><div></div><div></div></div><span>Menú</span></button>
+        </div>
+        <div class="white-buttons">
+            <ul>
+                <li>
+                    <a href="#">Ventas por mayor</a>
+                </li>
+                <li>
+                    <a href="#">Ventas Internacionales</a>
+                </li>
+                <li>
+                    <a href="#">Ventas por unidad</a>
+                </li>
+                <li>
+                    <a href="#">Outlet Mayorista</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

@@ -27,7 +27,8 @@
 {block name='right_column'}{/block}
 
 {block name='content_wrapper'}
-  <div id="content-wrapper" class="left-column col-xs-12 col-sm-8 col-md-9">
+  <div id="content-wrapper" class="main-content-padding babalu-product-list-fixed">
+      
     {hook h="displayContentWrapperTop"}
     {block name='content'}
       <p>Hello world! This is HTML5 Boilerplate.</p>

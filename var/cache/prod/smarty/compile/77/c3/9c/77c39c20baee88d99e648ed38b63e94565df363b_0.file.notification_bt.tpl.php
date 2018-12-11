@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-11-27 23:13:08
+/* Smarty version 3.1.32, created on 2018-12-10 22:55:52
   from '/home4/makemark/public_html/makemark/babalu_prestashop/modules/gamification/views/templates/hook/notification_bt.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5bfe15d4cfd111_93361991',
+  'unifunc' => 'content_5c0f35481fb5a3_00383199',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bfe15d4cfd111_93361991 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c0f35481fb5a3_00383199 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
 >
 	var current_id_tab = <?php echo intval($_smarty_tpl->tpl_vars['current_id_tab']->value);?>

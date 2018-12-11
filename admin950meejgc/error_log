@@ -11,3 +11,7 @@
 [25-Nov-2018 22:45:20 America/Bogota] PHP Notice:  Undefined variable: link_advice in /home4/makemark/public_html/makemark/babalu_prestashop/modules/psaddonsconnect/psaddonsconnect.php on line 228
 [26-Nov-2018 20:26:30 America/Bogota] PHP Notice:  Undefined index: es in /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/c8/8a/07/c88a078d01ee62f7e86896219a85accb77e82fd1_0.file.modal_translation.tpl.php on line 39
 [26-Nov-2018 20:26:30 America/Bogota] PHP Notice:  Undefined index: cb in /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/c8/8a/07/c88a078d01ee62f7e86896219a85accb77e82fd1_0.file.modal_translation.tpl.php on line 39
+[04-Dec-2018 20:37:19 America/Bogota] PHP Notice:  Undefined variable: advice in /home4/makemark/public_html/makemark/babalu_prestashop/modules/psaddonsconnect/psaddonsconnect.php on line 227
+[04-Dec-2018 20:37:19 America/Bogota] PHP Notice:  Undefined variable: link_advice in /home4/makemark/public_html/makemark/babalu_prestashop/modules/psaddonsconnect/psaddonsconnect.php on line 228
+[04-Dec-2018 21:34:00 America/Bogota] PHP Notice:  Undefined variable: advice in /home4/makemark/public_html/makemark/babalu_prestashop/modules/psaddonsconnect/psaddonsconnect.php on line 227
+[04-Dec-2018 21:34:00 America/Bogota] PHP Notice:  Undefined variable: link_advice in /home4/makemark/public_html/makemark/babalu_prestashop/modules/psaddonsconnect/psaddonsconnect.php on line 228

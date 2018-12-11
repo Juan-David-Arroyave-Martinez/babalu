@@ -80,6 +80,24 @@
                 <a href="#" class="shw-crt"><i class="material-icons shopping-cart cust-icart">shopping_cart</i> <span class="txt-ext">VER CARRITO</span></a>
                 <span class="cart-products-count cust-spin">0</span>
             </div>
+            <a href="#" class="search-mobl"><img src="{$urls.img_ps_url}/custom/msc-searcher.svg"></a>
+            <button type="button" class="toggle-main-menu pull-left navbar-toggle collapsed srch-nav-mob"><div class="h-icon"><div></div><div></div><div></div></div><span>Menú</span></button>
+        </div>
+        <div class="white-buttons">
+            <ul>
+                <li>
+                    <a href="#">Ventas por mayor</a>
+                </li>
+                <li>
+                    <a href="#">Ventas Internacionales</a>
+                </li>
+                <li>
+                    <a href="#">Ventas por unidad</a>
+                </li>
+                <li>
+                    <a href="#">Outlet Mayorista</a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
