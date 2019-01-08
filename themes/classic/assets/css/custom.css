@@ -1161,7 +1161,7 @@ ul.babalu-category-list-ul {
 
 .babalu-category-search .block-search {
     margin-left: 60px;
-    margin-top: 10px;
+    margin-top: 34px;
     width: calc(100% - 60px);
 }
 
@@ -1212,15 +1212,277 @@ ul.babalu-category-list-ul {
 
 input.babalu-search-input {
     font-family: 'Josefin Sans',sans-serif;
-    padding-left: 40px;
+    padding-left: 0px;
     height: 25px;
-    width: 100%;
+    width: 80%;
     border: 0;
     outline: 0;
     font-weight: 600;
     background: transparent;
     font-size: 12px;
     text-transform: uppercase;
+    display: inline-block;
+}
+
+.btn-snd-cat{
+    width: 42px;
+    background-color: transparent;
+    border: 0px;
+    display: inline-block;
+}
+
+.prod-wrap{
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+.grid-prod{
+    position: relative !important;
+    width: 310px !important;
+    margin: 10px !important;
+}
+
+.prod-wrap .thumbnail-container{
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px !important;
+}
+
+.product-item-image{
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+    display: flex;
+    background-size: 218%;
+    background-position: center center;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.babalu-details {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.product-sku {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13.4px;
+    margin: 0;
+    border-radius: 0;
+    padding: 8px 0 5px 10px;
+    color: #505050;
+    font-family: sans-serif;
+    font-weight: 400;
+    border-top: 1px solid #ececec;
+    text-transform: uppercase;
+    background: #fff;
+    border-bottom: 1px solid #ececec;
+}
+
+.hid-desc-opt{
+    display: none;
+}
+
+.babalu-product-info {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.babalu-product-info .product-name {
+    padding: 10px;
+    height: 60px;
+    max-height: 60px;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Josefin Sans',sans-serif;
+    line-height: 1.42857143;
+}
+
+.thumbnail-container{
+    box-shadow: 0px 0px 0px 0 rgba(0,0,0,0) !important;
+}
+
+.babalu-product-info .product-price {
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-align: center;
+    border-top: solid 1px #e4e4e4;
+}
+
+.cust-old-pric{
+    font-size: 13px;
+    font-weight: 500;
+    color: #616161;
+    font-family: 'Josefin Sans',sans-serif;
+    width: 40%;
+    display: inline-block;
+}
+
+.cust-reg-pric{
+    line-height: 1.42857143;
+    color: #333;
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 16px;
+    width: 40%;
+    display: inline-block;
+}
+
+.product-cust:hover .babalu-product-info{
+    transition: all .3s;
+    background: #ff498a;
+    color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;    
+}
+
+.product-cust:hover .babalu-product-info > .product-name{
+    color: #fff !important;
+}
+
+.product-cust:hover .price-box > .cust-reg-pric{
+    color: #fff !important;
+}
+
+.tag-sale {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    z-index: 99;
+}
+
+.tag-sale::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 70px solid #ec4f93;
+    border-left: 70px solid transparent;
+    z-index: -1;
+}
+
+.tag-sale-text {
+    font-size: 13px;
+    color: #fff;
+    z-index: 9;
+    margin-top: 15px;
+    margin-right: 3px;
+    font-family: 'Josefin Sans',sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#products .thumbnail-container:focus .highlighted-informations.no-variants, #products .thumbnail-container:hover .highlighted-informations.no-variants, .featured-products .thumbnail-container:focus .highlighted-informations.no-variants, .featured-products .thumbnail-container:hover .highlighted-informations.no-variants, .product-accessories .thumbnail-container:focus .highlighted-informations.no-variants, .product-accessories .thumbnail-container:hover .highlighted-informations.no-variants, .product-miniature .thumbnail-container:focus .highlighted-informations.no-variants, .product-miniature .thumbnail-container:hover .highlighted-informations.no-variants {
+    bottom: 8.6rem;
+}
+
+.babalu-add-to-cart {
+    transition: all .3s;
+    width: 50%;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.product-whislist {
+    transition: all .3s;
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.hover-details {
+    background: rgba(0,0,0,.7) !important;
+    display: block;
+    width: 100% !important;
+}
+
+.icc-prod-pers{
+    width: 19px;
+}
+
+.lst-highlighted{
+    display: block;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.highlighted-informations{
+    padding-top: 0px !important; 
+}
+
+.lst-highlighted li{
+    background: rgba(0,0,0,0) !important;
+    transition: all .3s;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.lst-highlighted li:hover{
+    background: rgba(0,0,0,.7) !important;
+}
+
+.babalu-product-columns {
+    display: flex;
+}
+
+.babalu-product-left.expanded {
+    width: 33%;
+    background: #fff;
+}
+
+.babalu-product-left {
+    position: relative;
+    width: 3%;
+    float: left;
+    box-shadow: 0 0 30px rgba(0,0,0,.1);
+    z-index: 2;
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.babalu-product-main {
+    background: #fff;
+    width: 64%;
+    display: table-caption;
+    float: left;
+    padding: 15px 0 42px 42px;
+}
+
+.babalu-breadcrumbs-int{
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid #000;
+    font-family: sans-serif;
+}
+
+.previous-next {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    margin-bottom: 5px;
+    width: auto;
+}
+
+.breadcrumbs-int {
+    margin: 0;
+    width: 70%;
 }
 
 

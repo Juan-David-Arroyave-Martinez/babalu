@@ -23,17 +23,11 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='product_miniature_item'}
-  <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+  <article class="product-miniature js-product-miniature grid-prod product-cust" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       {block name='product_thumbnail'}
         {if $product.cover}
-          <a href="{$product.url}" class="thumbnail product-thumbnail">
-            <img
-              src = "{$product.cover.bySize.home_default.url}"
-              alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
-              data-full-size-image-url = "{$product.cover.large.url}"
-            >
-          </a>
+          <a href="{$product.url}" class="product-item-image" alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}" style="background-image: url({$product.cover.bySize.large_default.url})"></a>
         {else}
           <a href="{$product.url}" class="thumbnail product-thumbnail">
             <img
@@ -43,7 +37,24 @@
         {/if}
       {/block}
 
-      <div class="product-description">
+      <div class="babalu-details">
+        <div class="product-sku">
+            REF: {$product.reference|escape:'htmlall':'UTF-8'}
+        </div>
+        <div class="babalu-product-info">
+          <div class="product-name">
+              {$product.name}
+          </div>
+          <div class="product-price">
+            <div class="price-box price-final_price">
+                <span class="regular-price cust-old-pric">${$product.regular_price}</span>
+                <span itemprop="price" class="price cust-reg-pric">${$product.price}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-description hid-desc-opt">
         {block name='product_name'}
           {if $page.page_name == 'index'}
             <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
@@ -84,20 +95,17 @@
         {/block}
       </div>
 
-      {block name='product_flags'}
-        <ul class="product-flags">
-          {foreach from=$product.flags item=flag}
-            <li class="product-flag {$flag.type}">{$flag.label}</li>
-          {/foreach}
-        </ul>
-      {/block}
+      
 
-      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
-        {block name='quick_view'}
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
-          </a>
-        {/block}
+      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down hover-details">
+        <ul class="lst-highlighted">
+          <li class="babalu-add-to-cart">
+            <a href="{$product.url}"><img src="{$urls.img_ps_url}/custom/shopping-cart.svg" class="icc-prod-pers"></a>
+          </li>
+          <li class="product-whislist">
+            <a href="#"><img src="{$urls.img_ps_url}/custom/heart.svg" class="icc-prod-pers"></a>
+          </li>
+        </ul>
 
         {block name='product_variants'}
           {if $product.main_variants}
@@ -105,6 +113,14 @@
           {/if}
         {/block}
       </div>
+
+
+      <div class="tag-sale">
+          <div class="tag-sale-text">
+            <span>SALE</span>
+          </div>
+      </div>
+
 
     </div>
   </article>

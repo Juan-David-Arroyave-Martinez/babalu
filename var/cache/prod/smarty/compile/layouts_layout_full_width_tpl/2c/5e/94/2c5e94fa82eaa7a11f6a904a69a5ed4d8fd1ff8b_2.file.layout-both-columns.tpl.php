@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-12-10 23:55:09
+/* Smarty version 3.1.32, created on 2019-01-07 20:26:19
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/layouts/layout-both-columns.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c0f432db14d71_87820926',
+  'unifunc' => 'content_5c33fc3bf3eb03_79740961',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2c5e94fa82eaa7a11f6a904a69a5ed4d8fd1ff8b' => 
     array (
       0 => '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/layouts/layout-both-columns.tpl',
-      1 => 1544499556,
+      1 => 1544994429,
       2 => 'file',
     ),
   ),
@@ -27,7 +27,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:_partials/javascript.tpl' => 1,
   ),
 ),false)) {
-function content_5c0f432db14d71_87820926 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c33fc3bf3eb03_79740961 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -37,7 +37,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
   <head>
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16990379975c0f432daf6180_99374268', 'head');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8304316615c33fc3bf247f9_74330852', 'head');
 ?>
 
   </head>
@@ -47,25 +47,25 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16990379975c0f432d
 ">
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17363912595c0f432dafa057_60167122', 'hook_after_body_opening_tag');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2078027455c33fc3bf27010_12295021', 'hook_after_body_opening_tag');
 ?>
 
 
     <main>
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13431068065c0f432dafb193_21143202', 'product_activation');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13196979215c33fc3bf28030_59402521', 'product_activation');
 ?>
 
 
       <header id="header">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1910277255c0f432dafc141_80684765', 'header');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16898778595c33fc3bf28fe5_80297798', 'header');
 ?>
 
       </header>
 
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21419796885c0f432dafd2f5_56443291', 'notifications');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5589279865c33fc3bf29f25_30814700', 'notifications');
 ?>
 
 
@@ -73,28 +73,24 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21419796885c0f432d
         <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>"displayWrapperTop"),$_smarty_tpl ) );?>
 
         <div class="cont-ppl">
-			<?php if ($_smarty_tpl->tpl_vars['category']->value) {?>
+
+            
+      
+      <?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] == 'category') {?>
          <style>
          .catalog-sales-bar{
            display: none;
          }
          </style>
-        <div class="category-image babalu-category-image" style="background-image: url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
-img/c/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['id'], ENT_QUOTES, 'UTF-8');?>
-.jpg);">
-          <div class="babalu-category-description">
-          <h1 class="category-title"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['name'], ENT_QUOTES, 'UTF-8');?>
-</h1>
-          <?php if ($_smarty_tpl->tpl_vars['category']->value['description']) {?>
-            <div id="category-description" class="category-description"><?php echo $_smarty_tpl->tpl_vars['category']->value['description'];?>
-</div>
-          <?php }?>
-          </div>
-        </div>
+
+<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16615461685c33fc3bf2c579_01615284', "custom-cat");
+?>
+
         
         <?php }?>
           <div class="columns-cat">
-              <?php if ($_smarty_tpl->tpl_vars['category']->value) {?>
+              <?php if ($_smarty_tpl->tpl_vars['page']->value['page_name'] == 'category') {?>
               <div class="babalu-category-helper">
                   <div class="col-md-4 col-sm-4 babalu-category-search">
                     <div class="block block-search">
@@ -102,8 +98,9 @@ img/c/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['id'
                             <form method="get" action="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_controller_url']->value, ENT_QUOTES, 'UTF-8');?>
 " class="srch-bread">
                                 <input type="hidden" name="controller" value="search">
-                                <button type="submit">
-                                    <i class="material-icons search"></i>
+                                <button type="submit" class="btn-snd-cat">
+                                    <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>
+/custom/srch-cat.svg">
                                 </button>
                                 <input class="babalu-search-input" type="text" name="s" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['search_string']->value, ENT_QUOTES, 'UTF-8');?>
 " placeholder="¿Qué Estás Buscando?" aria-label="<?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'Search','d'=>'Shop.Theme.Catalog'),$_smarty_tpl ) );?>
@@ -114,24 +111,26 @@ img/c/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['id'
                   </div>
                   <div class="col-md-8 col-sm-8 babalu-breadcrumbs">
                       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10207752365c0f432db05df1_86061223', 'breadcrumb');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12485450955c33fc3bf322d8_54367460', 'breadcrumb');
 ?>
 
                   </div>
                 </div>
                 <?php }?>
+                
+
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14052695465c0f432db07368_57100290', "left_column");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5772434635c33fc3bf33817_30604555', "left_column");
 ?>
 
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1596388235c0f432db09b06_10238343', "content_wrapper");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18084465665c33fc3bf35bc6_42146166', "content_wrapper");
 ?>
 
         </div>
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14271845915c0f432db0d4c8_52847177', "right_column");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9648081815c33fc3bf383f7_67503531', "right_column");
 ?>
 
         </div>
@@ -141,7 +140,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_14271845915c0f432d
 
       <footer id="footer">
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15912118155c0f432db105f5_39672168', "footer");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10415069035c33fc3bf3b204_08088507', "footer");
 ?>
 
       </footer>
@@ -149,12 +148,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15912118155c0f432d
     </main>
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2783475615c0f432db11780_20373969', 'javascript_bottom');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3020277125c33fc3bf3c333_68566405', 'javascript_bottom');
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2152289755c0f432db13bc6_35965810', 'hook_before_body_closing_tag');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9125349275c33fc3bf3d967_43431542', 'hook_before_body_closing_tag');
 ?>
 
   </body>
@@ -162,12 +161,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_2152289755c0f432db
 </html>
 <?php }
 /* {block 'head'} */
-class Block_16990379975c0f432daf6180_99374268 extends Smarty_Internal_Block
+class Block_8304316615c33fc3bf247f9_74330852 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'head' => 
   array (
-    0 => 'Block_16990379975c0f432daf6180_99374268',
+    0 => 'Block_8304316615c33fc3bf247f9_74330852',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -180,12 +179,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'head'} */
 /* {block 'hook_after_body_opening_tag'} */
-class Block_17363912595c0f432dafa057_60167122 extends Smarty_Internal_Block
+class Block_2078027455c33fc3bf27010_12295021 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_after_body_opening_tag' => 
   array (
-    0 => 'Block_17363912595c0f432dafa057_60167122',
+    0 => 'Block_2078027455c33fc3bf27010_12295021',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -198,12 +197,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_after_body_opening_tag'} */
 /* {block 'product_activation'} */
-class Block_13431068065c0f432dafb193_21143202 extends Smarty_Internal_Block
+class Block_13196979215c33fc3bf28030_59402521 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'product_activation' => 
   array (
-    0 => 'Block_13431068065c0f432dafb193_21143202',
+    0 => 'Block_13196979215c33fc3bf28030_59402521',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -216,12 +215,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'product_activation'} */
 /* {block 'header'} */
-class Block_1910277255c0f432dafc141_80684765 extends Smarty_Internal_Block
+class Block_16898778595c33fc3bf28fe5_80297798 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header' => 
   array (
-    0 => 'Block_1910277255c0f432dafc141_80684765',
+    0 => 'Block_16898778595c33fc3bf28fe5_80297798',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -234,12 +233,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'header'} */
 /* {block 'notifications'} */
-class Block_21419796885c0f432dafd2f5_56443291 extends Smarty_Internal_Block
+class Block_5589279865c33fc3bf29f25_30814700 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'notifications' => 
   array (
-    0 => 'Block_21419796885c0f432dafd2f5_56443291',
+    0 => 'Block_5589279865c33fc3bf29f25_30814700',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -251,13 +250,41 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 }
 /* {/block 'notifications'} */
+/* {block "custom-cat"} */
+class Block_16615461685c33fc3bf2c579_01615284 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'custom-cat' => 
+  array (
+    0 => 'Block_16615461685c33fc3bf2c579_01615284',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+        <div class="category-image babalu-category-image" style="background-image: url(<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+img/c/<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['id'], ENT_QUOTES, 'UTF-8');?>
+.jpg);">
+          <div class="babalu-category-description">
+          <h1 class="category-title"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['category']->value['name'], ENT_QUOTES, 'UTF-8');?>
+</h1>
+          <?php if ($_smarty_tpl->tpl_vars['category']->value['description']) {?>
+            <div id="category-description" class="category-description"><?php echo $_smarty_tpl->tpl_vars['category']->value['description'];?>
+</div>
+          <?php }?>
+          </div>
+        </div>
+        <?php
+}
+}
+/* {/block "custom-cat"} */
 /* {block 'breadcrumb'} */
-class Block_10207752365c0f432db05df1_86061223 extends Smarty_Internal_Block
+class Block_12485450955c33fc3bf322d8_54367460 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'breadcrumb' => 
   array (
-    0 => 'Block_10207752365c0f432db05df1_86061223',
+    0 => 'Block_12485450955c33fc3bf322d8_54367460',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -270,12 +297,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'breadcrumb'} */
 /* {block "left_column"} */
-class Block_14052695465c0f432db07368_57100290 extends Smarty_Internal_Block
+class Block_5772434635c33fc3bf33817_30604555 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'left_column' => 
   array (
-    0 => 'Block_14052695465c0f432db07368_57100290',
+    0 => 'Block_5772434635c33fc3bf33817_30604555',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -287,7 +314,9 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 
               <?php } else { ?>
                 <div class="babalu-category-list-fixed affix-top">
-                <ul class="babalu-category-list-ul"><li><a href="https://babalufashion.com/marcas.html" data-category-id="3">Marcas</a></li><ul><li><a href="https://babalufashion.com/marcas/babalu.html" data-category-id="15">Babalú</a></li><li><a href="https://babalufashion.com/marcas/inizio.html" data-category-id="16">Inizio</a></li><li><a href="https://babalufashion.com/marcas/tarrao.html" data-category-id="17">Tarrao</a></li></ul><li><a href="https://babalufashion.com/mujeres.html" data-category-id="4">Mujeres</a></li><ul><li><a href="https://babalufashion.com/mujeres/ropa-deportiva.html" data-category-id="6">Ropa deportiva femenina</a></li><li><a href="https://babalufashion.com/mujeres/linea-ciclismo-femenina.html" data-category-id="136">Línea ciclismo femenina</a></li><li><a href="https://babalufashion.com/mujeres/vestidos-de-bano.html" data-category-id="134">Vestidos de Baño</a></li><li><a href="https://babalufashion.com/mujeres/lingerie.html" data-category-id="7">Lingerie</a></li></ul><li><a href="https://babalufashion.com/hombres.html" data-category-id="8">Hombres</a></li><ul><li><a href="https://babalufashion.com/hombres/ropa-deportiva-masculina.html" data-category-id="9">Ropa deportiva masculina</a></li><li><a href="https://babalufashion.com/hombres/linea-ciclismo-masculina.html" data-category-id="137">Linea ciclismo masculina</a></li><li><a href="https://babalufashion.com/hombres/ropa-interior-microfibra.html" data-category-id="10">Ropa interior microfibra</a></li><li><a href="https://babalufashion.com/hombres/ropa-interior-algodon.html" data-category-id="19">Ropa interior algodón</a></li></ul><li><a href="https://babalufashion.com/ropa-interior-infantil.html" data-category-id="129">Infantil</a></li><ul><li><a href="https://babalufashion.com/ropa-interior-infantil/ropa-interior-nina.html" data-category-id="138">Ropa interior Niña</a></li><li><a href="https://babalufashion.com/ropa-interior-infantil/ropa-interior-nino.html" data-category-id="139">Ropa interior Niño</a></li></ul><li><a href="https://babalufashion.com/otras-categorias.html" data-category-id="11">Otras categorías</a></li><ul><li><a href="https://babalufashion.com/otras-categorias/accesorios.html" data-category-id="12">Accesorios deportivos</a></li><li><a href="https://babalufashion.com/otras-categorias/outlet-mayorista.html" data-category-id="130">Outlet mayorista</a></li><li><a href="https://babalufashion.com/otras-categorias/ver-todos-los-productos.html" data-category-id="131">Ver todos los productos</a></li></ul><li><a href="https://babalufashion.com/nueva-coleccion.html" data-category-id="135">Nueva colección</a></li><ul></ul></ul>
+                
+                  <ul class="babalu-category-list-ul"><li><a href="https://babalufashion.com/marcas.html" data-category-id="3">Marcas</a></li><ul><li><a href="https://babalufashion.com/marcas/babalu.html" data-category-id="15">Babalú</a></li><li><a href="https://babalufashion.com/marcas/inizio.html" data-category-id="16">Inizio</a></li><li><a href="https://babalufashion.com/marcas/tarrao.html" data-category-id="17">Tarrao</a></li></ul><li><a href="https://babalufashion.com/mujeres.html" data-category-id="4">Mujeres</a></li><ul><li><a href="https://babalufashion.com/mujeres/ropa-deportiva.html" data-category-id="6">Ropa deportiva femenina</a></li><li><a href="https://babalufashion.com/mujeres/linea-ciclismo-femenina.html" data-category-id="136">Línea ciclismo femenina</a></li><li><a href="https://babalufashion.com/mujeres/vestidos-de-bano.html" data-category-id="134">Vestidos de Baño</a></li><li><a href="https://babalufashion.com/mujeres/lingerie.html" data-category-id="7">Lingerie</a></li></ul><li><a href="https://babalufashion.com/hombres.html" data-category-id="8">Hombres</a></li><ul><li><a href="https://babalufashion.com/hombres/ropa-deportiva-masculina.html" data-category-id="9">Ropa deportiva masculina</a></li><li><a href="https://babalufashion.com/hombres/linea-ciclismo-masculina.html" data-category-id="137">Linea ciclismo masculina</a></li><li><a href="https://babalufashion.com/hombres/ropa-interior-microfibra.html" data-category-id="10">Ropa interior microfibra</a></li><li><a href="https://babalufashion.com/hombres/ropa-interior-algodon.html" data-category-id="19">Ropa interior algodón</a></li></ul><li><a href="https://babalufashion.com/ropa-interior-infantil.html" data-category-id="129">Infantil</a></li><ul><li><a href="https://babalufashion.com/ropa-interior-infantil/ropa-interior-nina.html" data-category-id="138">Ropa interior Niña</a></li><li><a href="https://babalufashion.com/ropa-interior-infantil/ropa-interior-nino.html" data-category-id="139">Ropa interior Niño</a></li></ul><li><a href="https://babalufashion.com/otras-categorias.html" data-category-id="11">Otras categorías</a></li><ul><li><a href="https://babalufashion.com/otras-categorias/accesorios.html" data-category-id="12">Accesorios deportivos</a></li><li><a href="https://babalufashion.com/otras-categorias/outlet-mayorista.html" data-category-id="130">Outlet mayorista</a></li><li><a href="https://babalufashion.com/otras-categorias/ver-todos-los-productos.html" data-category-id="131">Ver todos los productos</a></li></ul><li><a href="https://babalufashion.com/nueva-coleccion.html" data-category-id="135">Nueva colección</a></li><ul></ul></ul>
+              
               </div>
                 <?php }?> 
             </div>
@@ -296,7 +325,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "left_column"} */
 /* {block "content"} */
-class Block_12173120605c0f432db0aba1_31171860 extends Smarty_Internal_Block
+class Block_13003935995c33fc3bf36b57_79620232 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -307,16 +336,16 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "content"} */
 /* {block "content_wrapper"} */
-class Block_1596388235c0f432db09b06_10238343 extends Smarty_Internal_Block
+class Block_18084465665c33fc3bf35bc6_42146166 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content_wrapper' => 
   array (
-    0 => 'Block_1596388235c0f432db09b06_10238343',
+    0 => 'Block_18084465665c33fc3bf35bc6_42146166',
   ),
   'content' => 
   array (
-    0 => 'Block_12173120605c0f432db0aba1_31171860',
+    0 => 'Block_13003935995c33fc3bf36b57_79620232',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -326,7 +355,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
               <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>"displayContentWrapperTop"),$_smarty_tpl ) );?>
 
               <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12173120605c0f432db0aba1_31171860', "content", $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13003935995c33fc3bf36b57_79620232', "content", $this->tplIndex);
 ?>
 
               <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>"displayContentWrapperBottom"),$_smarty_tpl ) );?>
@@ -337,12 +366,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_12173120605c0f432d
 }
 /* {/block "content_wrapper"} */
 /* {block "right_column"} */
-class Block_14271845915c0f432db0d4c8_52847177 extends Smarty_Internal_Block
+class Block_9648081815c33fc3bf383f7_67503531 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'right_column' => 
   array (
-    0 => 'Block_14271845915c0f432db0d4c8_52847177',
+    0 => 'Block_9648081815c33fc3bf383f7_67503531',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -362,12 +391,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "right_column"} */
 /* {block "footer"} */
-class Block_15912118155c0f432db105f5_39672168 extends Smarty_Internal_Block
+class Block_10415069035c33fc3bf3b204_08088507 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'footer' => 
   array (
-    0 => 'Block_15912118155c0f432db105f5_39672168',
+    0 => 'Block_10415069035c33fc3bf3b204_08088507',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -380,12 +409,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "footer"} */
 /* {block 'javascript_bottom'} */
-class Block_2783475615c0f432db11780_20373969 extends Smarty_Internal_Block
+class Block_3020277125c33fc3bf3c333_68566405 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'javascript_bottom' => 
   array (
-    0 => 'Block_2783475615c0f432db11780_20373969',
+    0 => 'Block_3020277125c33fc3bf3c333_68566405',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -398,12 +427,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'javascript_bottom'} */
 /* {block 'hook_before_body_closing_tag'} */
-class Block_2152289755c0f432db13bc6_35965810 extends Smarty_Internal_Block
+class Block_9125349275c33fc3bf3d967_43431542 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'hook_before_body_closing_tag' => 
   array (
-    0 => 'Block_2152289755c0f432db13bc6_35965810',
+    0 => 'Block_9125349275c33fc3bf3d967_43431542',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
