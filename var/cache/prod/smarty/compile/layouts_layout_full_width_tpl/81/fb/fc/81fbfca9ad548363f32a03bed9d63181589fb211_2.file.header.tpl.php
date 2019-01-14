@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-07 20:26:20
+/* Smarty version 3.1.32, created on 2019-01-14 01:05:15
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c33fc3c17ccf5_76829994',
+  'unifunc' => 'content_5c3c269b8aa183_07689707',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c33fc3c17ccf5_76829994 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3c269b8aa183_07689707 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16931967415c33fc3c177055_81105644', 'header_banner');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3143250115c3c269b8a4c51_35742754', 'header_banner');
 ?>
 
 
@@ -32,12 +32,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_16931967415c33fc3c
 
 <?php }
 /* {block 'header_banner'} */
-class Block_16931967415c33fc3c177055_81105644 extends Smarty_Internal_Block
+class Block_3143250115c3c269b8a4c51_35742754 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header_banner' => 
   array (
-    0 => 'Block_16931967415c33fc3c177055_81105644',
+    0 => 'Block_3143250115c3c269b8a4c51_35742754',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

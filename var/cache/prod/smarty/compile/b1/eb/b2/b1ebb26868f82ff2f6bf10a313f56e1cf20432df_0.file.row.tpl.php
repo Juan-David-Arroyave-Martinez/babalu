@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-12-15 13:21:54
+/* Smarty version 3.1.32, created on 2019-01-09 17:00:47
   from '/home4/makemark/public_html/makemark/babalu_prestashop/admin950meejgc/themes/default/template/helpers/kpi/row.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c1546420c8e31_15507209',
+  'unifunc' => 'content_5c366f0f0b4690_02312451',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c1546420c8e31_15507209 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c366f0f0b4690_02312451 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="panel kpi-container">
 	<?php if ($_smarty_tpl->tpl_vars['refresh']->value) {?>
 		<div class="kpi-refresh"><button class="close refresh" type="button" onclick="refresh_kpis(true);"><i class="process-icon-refresh" style="font-size:1em"></i></button></div>

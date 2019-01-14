@@ -4034,3 +4034,7 @@ Stack trace:
 #2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/icanboogie/cldr/lib/AccessorTrait.php(21): ICanBoogie\CLDR\Locale->__object_get('numbers')
 #3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/icanboogie/cldr/lib/LocalizedCurrency.php(80): ICanBoogie\CLDR\Locale->__get('numbers')
 #4 /home4/makemark/public_ht in /home4/makemark/public_html/makemark/babalu_prestashop/vendor/icanboogie/cldr/lib/Numbers.php on line 84
+[13-Jan-2019 23:05:35 America/Bogota] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "file:/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/catalog/_partials/product-add-to-cart.tpl"  on line 30 "<div class="qty">"  - Unexpected "<" <-- 
+  thrown in /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 30
+[13-Jan-2019 23:05:49 America/Bogota] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "file:/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/catalog/_partials/product-add-to-cart.tpl"  on line 30 "<div class="qty">"  - Unexpected "<" <-- 
+  thrown in /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 30

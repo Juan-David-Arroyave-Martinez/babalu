@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-07 20:26:19
+/* Smarty version 3.1.32, created on 2019-01-14 01:02:25
   from '/home4/makemark/public_html/makemark/babalu_prestashop/modules/pspagebuilder/views/templates/hook/pspagebuilder.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c33fc3bca0e89_82181882',
+  'unifunc' => 'content_5c3c25f1bcdb80_39703348',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c33fc3bca0e89_82181882 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3c25f1bcdb80_39703348 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_assignInScope('ime', time());?>
 <div id="pts<?php echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['prefix']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');
 echo htmlspecialchars(call_user_func_array($_smarty_tpl->registered_plugins[ 'modifier' ][ 'escape' ][ 0 ], array( $_smarty_tpl->tpl_vars['time']->value,'html','UTF-8' )), ENT_QUOTES, 'UTF-8');?>

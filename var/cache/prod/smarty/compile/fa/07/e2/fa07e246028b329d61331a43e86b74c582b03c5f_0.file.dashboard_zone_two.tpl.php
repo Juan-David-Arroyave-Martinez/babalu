@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2018-12-15 13:04:54
+/* Smarty version 3.1.32, created on 2019-01-14 00:24:37
   from '/home4/makemark/public_html/makemark/babalu_prestashop/modules/dashproducts/views/templates/hook/dashboard_zone_two.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c1542469ad076_00134489',
+  'unifunc' => 'content_5c3c1d1547fe77_59336271',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c1542469ad076_00134489 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c3c1d1547fe77_59336271 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <section id="dashproducts" class="panel widget <?php if ($_smarty_tpl->tpl_vars['allow_push']->value) {?> allow_push<?php }?>">
 	<header class="panel-heading">
