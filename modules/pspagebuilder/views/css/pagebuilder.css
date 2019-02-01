@@ -13,10 +13,6 @@ a:hover, a:focus {
   outline: none;
 }
 
-img {
-  max-width: 100%;
-}
-
 .container .pagebuilder .container {
   max-width: 100% !important;
 }

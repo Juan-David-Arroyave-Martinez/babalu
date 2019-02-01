@@ -106,12 +106,6 @@
             <a href="#"><img src="{$urls.img_ps_url}/custom/heart.svg" class="icc-prod-pers"></a>
           </li>
         </ul>
-
-        {block name='product_variants'}
-          {if $product.main_variants}
-            {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-          {/if}
-        {/block}
       </div>
 
 

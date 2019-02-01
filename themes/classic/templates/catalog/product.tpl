@@ -64,7 +64,13 @@
       <div class="babalu-product-main">
         <div class="babalu-breadcrumbs-int">
           <div class="previous-next">
-
+            <a href="{$link->getCategoryLink($category->id_category, $category->link_rewrite)|escape:'html':'UTF-8'}" class="btn-vol-cust">Volver</a>
+             {if $prev_product}
+                <a title="{$prev_product.name}" class="btn btn-default btn-prev-cust" href="{url entity='product' id=$prev_product.id_product}">Anterior</a>
+            {/if}
+            {if $next_product}
+                <a title="{$next_product.name}" class="btn btn-default btn-next-cust" href="{url entity='product' id=$next_product.id_product}">Siguiente</a>
+            {/if}
           </div>
           <div class="breadcrumbs-int">
             {block name='breadcrumb'}

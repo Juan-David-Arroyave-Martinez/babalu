@@ -1,4 +1,3 @@
-/*
- * Custom code goes here.
- * A template should always ship with an empty custom.js
- */
+$(document).ready(function(){
+    $(".swtch-attr-selected").html($(".opt-col-slctd").attr("data-variantname"));
+});

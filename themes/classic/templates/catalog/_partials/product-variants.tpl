@@ -22,19 +22,20 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <div class="product-variants">
     {foreach from=$groups key=id_attribute_group item=group}
       {if !empty($group.attributes)}
       <div class="clearfix product-variants-item">
         <span class="control-label ind-variant">{$group.name}</span>
         
-
         {if $group.group_type == 'color'}
+          <span class="swtch-attr-selected"></span>
           <ul class="lst-variant" id="group_{$id_attribute_group}">
             {foreach from=$group.attributes key=id_attribute item=group_attribute}
               <li class="float-xs-left input-container">
                 <label class="lbl-varnt">
-                  <input class="input-color opt-col" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
+                  <input class="input-color opt-col {if $group_attribute.selected}opt-col-slctd{/if}" type="radio" data-product-attribute="{$id_attribute_group}" data-variantname="{$group_attribute.name}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
                   <span
                     {if $group_attribute.html_color_code}class="color" style="background-color: {$group_attribute.html_color_code}" {/if}
                     {if $group_attribute.texture}class="color texture" style="background-image: url({$group_attribute.texture})" {/if}
@@ -43,6 +44,9 @@
               </li>
             {/foreach}
           </ul>
+          <script>
+            $(".swtch-attr-selected").html($(".opt-col-slctd").attr("data-variantname"));
+          </script>
         {elseif $group.group_type == 'select'}
           <select
             class="form-control form-control-select"

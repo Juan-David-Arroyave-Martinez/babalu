@@ -22,29 +22,48 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="images-container">
-  {block name='product_cover'}
-    <div class="product-cover">
-      {if $product.cover}
-        <img class="js-qv-product-cover" src="{$product.cover.bySize.large_default.url}" alt="{$product.cover.legend}" title="{$product.cover.legend}" style="width:100%;" itemprop="image">
-        <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
-          <i class="material-icons zoom-in">&#xE8FF;</i>
-        </div>
-      {else}
-        <img src="{$urls.no_picture_image.bySize.large_default.url}" style="width:100%;">
-      {/if}
-    </div>
-  {/block}
 
-  {block name='product_images'}
+ <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+ <script src='{$urls.js_url}jquery.zoom.js'></script>
+ <style>
+
+		.zoom {
+			display:inline-block;
+			position: relative;
+		}
+		
+		/* magnifying glass icon */
+		.zoom:after {
+			content:'';
+			display:block; 
+			width:33px; 
+			height:33px; 
+			position:absolute; 
+			top:0;
+			right:0;
+		}
+
+		.zoom img {
+			display: block;
+		}
+
+		.zoom img::selection { background-color: transparent; }
+
+		#ex2 img:hover { cursor: url(grab.cur), default; }
+		#ex2 img:active { cursor: url(grabbed.cur), default; }
+	</style>
+
+
+<div class="images-container">
+    {block name='product_images'}
     <div class="js-qv-mask mask">
       <ul class="product-images js-qv-product-images">
         {foreach from=$product.images item=image}
           <li class="thumb-container">
             <img
               class="thumb js-thumb {if $image.id_image == $product.cover.id_image} selected {/if}"
-              data-image-medium-src="{$image.bySize.medium_default.url}"
-              data-image-large-src="{$image.bySize.large_default.url}"
+              data-image-medium-src="{$image.bySize.zoom_images.url}"
+              data-image-large-src="{$image.bySize.zoom_images.url}"
               src="{$image.bySize.home_default.url}"
               alt="{$image.legend}"
               title="{$image.legend}"
@@ -56,5 +75,17 @@
       </ul>
     </div>
   {/block}
+  
+  {block name='product_cover'}
+    <span class='zoom spn-zoom-canvs' id='ex1'>
+      <img src='{$product.cover.bySize.zoom_images.url}' width='100%' height='100%' alt="{$product.cover.legend}" title="{$product.cover.legend}" class="js-qv-product-cover" itemprop="image"/>
+    </span>
+  {/block}
 </div>
+<script>
+  $('#ex1').zoom();
+  $(".thumb-container").click(function(){
+    $(".zoomImg").attr("src", $(".js-qv-product-cover").attr("src"));
+  });
+</script>
 {hook h='displayAfterProductThumbs'}

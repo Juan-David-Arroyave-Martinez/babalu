@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-14 01:05:15
+/* Smarty version 3.1.32, created on 2019-02-01 00:35:55
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c3c269b8aa183_07689707',
+  'unifunc' => 'content_5c53dabb8a24b2_23669338',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81fbfca9ad548363f32a03bed9d63181589fb211' => 
     array (
       0 => '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl',
-      1 => 1543590564,
+      1 => 1547612926,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c3c269b8aa183_07689707 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c53dabb8a24b2_23669338 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3143250115c3c269b8a4c51_35742754', 'header_banner');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20636565415c53dabb894536_92299866', 'header_banner');
 ?>
 
 
@@ -32,12 +32,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3143250115c3c269b8
 
 <?php }
 /* {block 'header_banner'} */
-class Block_3143250115c3c269b8a4c51_35742754 extends Smarty_Internal_Block
+class Block_20636565415c53dabb894536_92299866 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header_banner' => 
   array (
-    0 => 'Block_3143250115c3c269b8a4c51_35742754',
+    0 => 'Block_20636565415c53dabb894536_92299866',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -103,7 +103,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             <ul class="left-menu">
                 <li><a href="#">INICIO</a></li>
                 <li><a href="#">VENTAS MAYORISTAS</a></li>
-                <li><a href="#">OUTLET MAYORISTA</a></li>
+                <li><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['base_url'], ENT_QUOTES, 'UTF-8');?>
+es/3-outlet-mayorista">OUTLET MAYORISTA</a></li>
                 <li><a href="#">VENTAS MAYORISTAS INTERNACIONALES</a></li>
                 <li><a href="#">VENTAS POR UNIDAD</a></li>
             </ul>

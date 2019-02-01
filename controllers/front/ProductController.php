@@ -370,6 +370,13 @@ class ProductControllerCore extends ProductPresentingFrontControllerCore
             $this->assignAttributesGroups($product_for_template);
         }
 
+        $adjacent_products = $this->product->getAdjacentProducts();
+
+		$this->context->smarty->assign(array(
+			'prev_product'=> $adjacent_products['previous'],
+			'next_product'=> $adjacent_products['next']
+		));
+
         parent::initContent();
     }
 

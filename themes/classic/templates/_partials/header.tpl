@@ -72,7 +72,7 @@
             <ul class="left-menu">
                 <li><a href="#">INICIO</a></li>
                 <li><a href="#">VENTAS MAYORISTAS</a></li>
-                <li><a href="#">OUTLET MAYORISTA</a></li>
+                <li><a href="{$urls.base_url}es/3-outlet-mayorista">OUTLET MAYORISTA</a></li>
                 <li><a href="#">VENTAS MAYORISTAS INTERNACIONALES</a></li>
                 <li><a href="#">VENTAS POR UNIDAD</a></li>
             </ul>

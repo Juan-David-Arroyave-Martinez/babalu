@@ -33,9 +33,9 @@
           <input
             type="text"
             name="qty"
-            id="quantity_wanted"
+            id=""
             value="{$product.quantity_wanted}"
-            class="input-group"
+            class="inpt-qnty-cust input-group"
             min="{$product.minimal_quantity}"
             aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
           >
