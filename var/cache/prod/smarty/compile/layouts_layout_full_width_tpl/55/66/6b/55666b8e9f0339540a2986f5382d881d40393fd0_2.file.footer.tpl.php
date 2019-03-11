@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-02-01 00:35:55
+/* Smarty version 3.1.32, created on 2019-03-11 00:49:42
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/footer.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c53dabb8e3b68_71290049',
+  'unifunc' => 'content_5c85f6f6879a37_15186189',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c53dabb8e3b68_71290049 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c85f6f6879a37_15186189 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <div class="foot-cust">
     <div class="babalu-footer row">
         <div class="col-md-3 col-xs-12 col-sm-12">

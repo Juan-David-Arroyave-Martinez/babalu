@@ -23,22 +23,36 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='cart_summary_product_line'}
-  <div class="media-left">
-    <a href="{$product.url}" title="{$product.name}">
-      <img class="media-object" src="{$product.cover.small.url}" alt="{$product.name}">
-    </a>
-  </div>
-  <div class="media-body">
-    <span class="product-name">{$product.name}</span>
-    <span class="product-quantity">x{$product.quantity}</span>
-    <span class="product-price float-xs-right">{$product.price}</span>
-    {hook h='displayProductPriceBlock' product=$product type="unit_price"}
-    {foreach from=$product.attributes key="attribute" item="value"}
-        <div class="product-line-info product-line-info-secondary text-muted">
-            <span class="label">{$attribute}:</span>
-            <span class="value">{$value}</span>
-        </div>
-    {/foreach}
-    <br/>
+  <div class="row-list">
+    <div class="col col-md-1">
+        <a href="{$product.url}" title="{$product.name}" class="cont-lnk-immcrt">
+          <img class="media-object img-lnk-immcrt" src="{$product.cover.small.url}" alt="{$product.name}">
+        </a>
+    </div>
+    <div class="col col-md-2 list-item-name">
+      <span class="product-name">{$product.reference}</span>
+    </div>
+    <div class="col col-md-4">
+      <ul>
+        <li class="lst-itm-clrtl">
+          Color-Talla
+          <ul class="lst-contim-clrtl">
+              {foreach from=$product.attributes key="attribute" item="value"}
+              <li>
+                <span class="label lbl-tls-cart">{$attribute}</span>
+                <span class="value lbl-fls-cart">{$value}</span>
+              </li>
+              {/foreach}
+          </ul>
+        </li>
+      </ul>
+      
+    </div>
+    <div class="col col-md-2">
+      <span class="product-quantity cnt-lbl-lstcr">{$product.quantity}</span>
+    </div>
+    <div class="col col-md-3">
+      <span itemprop="price" class="price prec-cust-lscrt">${$product.price}.000</span>
+    </div>
   </div>
 {/block}

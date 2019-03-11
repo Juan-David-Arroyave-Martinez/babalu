@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-02-01 00:29:37
+/* Smarty version 3.1.32, created on 2019-02-07 23:15:07
   from '/home4/makemark/public_html/makemark/babalu_prestashop/admin950meejgc/themes/default/template/content.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c53d94139bd47_30856921',
+  'unifunc' => 'content_5c5d024bf32357_14052671',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c53d94139bd47_30856921 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c5d024bf32357_14052671 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="ajax_confirmation" class="alert alert-success hide"></div>
 <div id="ajaxBox" style="display:none"></div>
 

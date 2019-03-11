@@ -204,7 +204,7 @@
         </div>
         <div class="social-section">
             <h2 class="title">Síguenos</h2>
-            <ul>
+            <ul class="lst-scl-foot">
                 <li>
                     <a href="https://www.facebook.com/BabaluFashionOficial/">
                         <img class="img-responsive" src="{$urls.img_ps_url}/custom/icon-facebook.png" alt="Faceboook">

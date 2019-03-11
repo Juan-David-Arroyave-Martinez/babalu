@@ -29,7 +29,8 @@
     {block name='product_quantity'}
       <div class="product-quantity clearfix">
         <div class="qty">
-			<span class="spn-lbcn">Cantidad:</span>
+      <span class="spn-lbcn">Cantidad:</span>
+          <span class="less-cart-cust"><img src="{$urls.img_ps_url}minus.svg"></span>
           <input
             type="text"
             name="qty"
@@ -39,14 +40,26 @@
             min="{$product.minimal_quantity}"
             aria-label="{l s='Quantity' d='Shop.Theme.Actions'}"
           >
+          <span class="more-cart-cust"><img src="{$urls.img_ps_url}plus-sign.svg"></span>
+          <script>
+            $(".less-cart-cust").click(function(){
+              if ($('.inpt-qnty-cust').val() != 0)
+              $('.inpt-qnty-cust').val(parseInt($('.inpt-qnty-cust').val()) - 1);
+            });
+
+            $(".more-cart-cust").click(function(){
+              $('.inpt-qnty-cust').val(parseInt($('.inpt-qnty-cust').val()) + 1);
+            });
+          </script>
 		</div>
 		
 		{block name='product_details'}
 		{include file='catalog/_partials/product-details.tpl'}
 	  {/block}
-
+   
         <div class="add">
-          <button
+          {if $customer.is_logged }
+            <button
             class="cust-addtc btn btn-primary add-to-cart"
             data-button-action="add-to-cart"
             type="submit"
@@ -56,6 +69,9 @@
           >
             {l s='Add to cart' d='Shop.Theme.Actions'}
           </button>
+            {else}
+            <a class="usr-nlgd">Añadir al Carrito</a>
+            {/if}
         </div>
       </div>
     {/block}

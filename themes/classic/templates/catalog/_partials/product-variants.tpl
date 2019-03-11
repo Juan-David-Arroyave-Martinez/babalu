@@ -59,16 +59,24 @@
           </select>
         
         {elseif $group.group_type == 'radio'}
+        <span class="swtch-attr-selected-tll"></span>
           <ul class="lst-variant" id="group_{$id_attribute_group}">
             {foreach from=$group.attributes key=id_attribute item=group_attribute}
               <li class="input-container float-xs-left">
-                <label>
-                  <input class="input-radio" type="radio" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
+                <label class="lbl-cust-tll">
+                  <input class="input-radio inpt-cust-tll {if $group_attribute.selected}opt-tll-slctd{/if}" type="radio" data-variantname="{$group_attribute.name}" data-product-attribute="{$id_attribute_group}" name="group[{$id_attribute_group}]" value="{$id_attribute}"{if $group_attribute.selected} checked="checked"{/if}>
                   <span class="radio-label">{$group_attribute.name}</span>
                 </label>
               </li>
             {/foreach}
           </ul>
+          <script>
+            if($(".opt-tll-slctd").attr("data-variantname") == "U"){
+              $(".swtch-attr-selected-tll").html("Única");
+            }else{
+              $(".swtch-attr-selected-tll").html($(".opt-tll-slctd").attr("data-variantname"));
+            }
+            </script>
         {/if}
       </div>
       {/if}

@@ -4069,3 +4069,414 @@ Stack trace:
   thrown in /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 67
 [01-Feb-2019 00:09:47 America/Bogota] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "file:/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/catalog/_partials/product-cover-thumbnails.tpl"  on line 86 "<img src='{$product.cover.bySize. zoom_images.url}' width='555' height='320' alt="{$product.cover.legend}" title="{$product.cover.legend}"/>"  - Unexpected "	" <-- 
   thrown in /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 86
+[04-Feb-2019 23:09:31 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(214): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(247): Block_10373260815c590c7b6d0068_23520384->callBlock(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(183): Smarty_Internal_Runtime_Inheritance->callBlock(Object(Block_10373260815c590c7b6d0068 in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:10:57 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(224): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(247): Block_508371425c590cd16bea81_08469054->callBlock(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(183): Smarty_Internal_Runtime_Inheritance->callBlock(Object(Block_508371425c590cd16bea81_084 in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:12:08 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c590d18ae76d9_82620895(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:12:21 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c590d25ca0d79_27529200(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:12:55 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c590d47deb405_32154001(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:15:25 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/e7/69/b8/e769b85f3b5071069acdced6418c7b5123014f78_2.file.product.tpl.php(52): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c590dddd5e717_66731890(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/ in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:24:15 America/Bogota] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "file:/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl"  on line 137 "{extends file='customer/_partials/login-form.tpl' ui=$login_form}" unexpected 'ui' attribute <-- 
+  thrown in /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 137
+[04-Feb-2019 23:46:03 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(52): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c59150b617849_73664551(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:46:09 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(52): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c591511414cd3_66787183(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:46:12 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(52): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c591514ac8310_85844430(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:46:34 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(52): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c59152a6b41d0_24337270(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:53:36 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5916d0c5fa93_39891468(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Feb-2019 23:53:54 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5916e2700e47_95631934(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[07-Feb-2019 23:18:20 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5d030cabbcf6_66689104(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[07-Feb-2019 23:18:44 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5d032460a278_68673824(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[07-Feb-2019 23:18:54 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5d032e9e7f64_55638806(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[07-Feb-2019 23:25:24 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5d04b4385481_38134127(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[07-Feb-2019 23:29:04 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5d05906e3f89_74609632(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[08-Feb-2019 20:53:19 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5e328f6e8013_11376572(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[09-Feb-2019 20:55:58 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c5f84ae4e89e7_86933638(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[10-Feb-2019 20:56:09 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c60d639571d55_12078606(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[11-Feb-2019 20:52:07 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c6226c706fae3_99333414(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[12-Feb-2019 20:59:50 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c637a160ac193_63239559(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[13-Feb-2019 20:57:11 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c64caf761fd41_99239048(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[14-Feb-2019 21:02:32 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c661db8c4a921_13919945(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[15-Feb-2019 21:01:45 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c676f0963e8e5_51188775(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[16-Feb-2019 21:02:58 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c68c0d20f79d9_46530636(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[17-Feb-2019 21:03:11 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c6a125f98f9f2_92445040(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[18-Feb-2019 21:04:30 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c6b642e5e3488_21761599(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[19-Feb-2019 21:04:29 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c6cb5ad0a2b53_09096536(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[20-Feb-2019 21:01:28 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c6e0678c27959_58596157(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[21-Feb-2019 21:03:10 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c6f585ed61061_72293787(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[22-Feb-2019 21:07:04 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c70aac8775590_48634176(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[23-Feb-2019 21:01:48 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c71fb0c9302b4_51627080(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[24-Feb-2019 21:01:55 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c734c93268609_33104181(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[25-Feb-2019 17:02:10 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7465e2246629_12245745(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[25-Feb-2019 17:02:19 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7465eb54d017_35810387(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[25-Feb-2019 17:02:38 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7465fe4511e3_46369824(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[25-Feb-2019 21:03:57 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c749e8d4a7f38_00219609(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[26-Feb-2019 21:06:18 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c75f09a32a110_20571193(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[27-Feb-2019 21:01:39 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c774103553327_39438637(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[28-Feb-2019 11:47:45 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7810b1b0a967_12877105(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[28-Feb-2019 11:50:07 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c78113fdc1a10_36253370(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[28-Feb-2019 11:50:56 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c781170986af9_76034492(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[28-Feb-2019 11:51:06 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c78117a5ca464_10386100(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[28-Feb-2019 11:51:22 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_left_column_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c78118a1a2025_77505659(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/ in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[28-Feb-2019 11:51:41 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_left_column_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c78119da6cf03_00504210(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/ in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[28-Feb-2019 21:06:50 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7893baed49b4_56788442(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[01-Mar-2019 21:04:24 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c79e4a82d2322_13690053(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[02-Mar-2019 21:05:56 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7b36845058d2_76906888(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[03-Mar-2019 21:06:19 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7c881bf33132_31518113(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[04-Mar-2019 21:06:47 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7dd9b7911707_17588610(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[05-Mar-2019 21:03:35 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c7f2a777c0a23_92792577(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[06-Mar-2019 21:05:15 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c807c5bde78e7_14820481(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[07-Mar-2019 21:04:58 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c81cdcaf35fb0_74739242(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[08-Mar-2019 21:08:28 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c83201cce2908_93181281(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[09-Mar-2019 21:04:01 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c847091d97ae3_87095279(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[09-Mar-2019 22:39:44 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(53): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_resource_base.php(123): content_5c8487000f1ae0_34192023(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(114): Smarty_Template_Resource_Base->getRenderedTemplateCode(Object(Smarty_Internal_Template))
+#4 /home4/makemark/public_html/m in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[09-Mar-2019 22:47:13 America/Bogota] PHP Fatal error:  Uncaught Error: Call to a member function setTemplate() on null in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php:91
+Stack trace:
+#0 /home4/makemark/public_html/makemark/babalu_prestashop/classes/Smarty/SmartyLazyRegister.php(83): smartyRender(Array, Object(Smarty_Internal_Template))
+#1 /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php(224): SmartyLazyRegister->__call('smartyRender', Array)
+#2 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(247): Block_8431466035c8488c10d7559_96527782->callBlock(Object(Smarty_Internal_Template))
+#3 /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_runtime_inheritance.php(183): Smarty_Internal_Runtime_Inheritance->callBlock(Object(Block_8431466035c8488c10d7559_9 in /home4/makemark/public_html/makemark/babalu_prestashop/config/smartyfront.config.inc.php on line 91
+[10-Mar-2019 15:22:57 America/Bogota] PHP Fatal error:  Uncaught  --> Smarty Compiler: Syntax error in template "file:/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/catalog/_partials/product-add-to-cart.tpl"  on line 63 "{if $logged}" unclosed '{block}' tag <-- 
+  thrown in /home4/makemark/public_html/makemark/babalu_prestashop/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 63
+[10-Mar-2019 16:26:09 America/Bogota] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php on line 111
+[10-Mar-2019 16:26:09 America/Bogota] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php on line 111
+[10-Mar-2019 16:31:14 America/Bogota] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php on line 111
+[10-Mar-2019 16:31:14 America/Bogota] PHP Warning:  htmlspecialchars() expects parameter 1 to be string, array given in /home4/makemark/public_html/makemark/babalu_prestashop/var/cache/prod/smarty/compile/layouts_layout_full_width_tpl/81/fb/fc/81fbfca9ad548363f32a03bed9d63181589fb211_2.file.header.tpl.php on line 111

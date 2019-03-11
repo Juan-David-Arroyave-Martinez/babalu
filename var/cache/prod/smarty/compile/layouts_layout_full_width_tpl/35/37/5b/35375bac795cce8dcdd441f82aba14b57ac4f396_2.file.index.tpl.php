@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-31 20:49:58
+/* Smarty version 3.1.32, created on 2019-03-11 00:43:21
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c53a5c6766325_01821330',
+  'unifunc' => 'content_5c85f579c98e16_55587666',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '35375bac795cce8dcdd441f82aba14b57ac4f396' => 
     array (
       0 => '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/index.tpl',
-      1 => 1543382735,
+      1 => 1549424805,
       2 => 'file',
     ),
   ),
@@ -20,14 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c53a5c6766325_01821330 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c85f579c98e16_55587666 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 
     <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5944662135c53a5c6739a53_19999983', 'page_content_container');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15699215495c85f579c57e90_17813880', 'page_content_container');
 ?>
 
 
@@ -47,7 +47,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5944662135c53a5c67
 <?php $_smarty_tpl->inheritance->endChild($_smarty_tpl, 'page.tpl');
 }
 /* {block 'hook_home'} */
-class Block_19687263675c53a5c673b835_56762602 extends Smarty_Internal_Block
+class Block_7188582805c85f579c5b424_26262430 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
@@ -59,13 +59,13 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block 'hook_home'} */
 /* {block 'page_content'} */
-class Block_3390842505c53a5c673aca4_93689546 extends Smarty_Internal_Block
+class Block_5012990635c85f579c59b23_42786101 extends Smarty_Internal_Block
 {
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 ?>
 
           <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19687263675c53a5c673b835_56762602', 'hook_home', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7188582805c85f579c5b424_26262430', 'hook_home', $this->tplIndex);
 ?>
 
         <?php
@@ -73,20 +73,20 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19687263675c53a5c6
 }
 /* {/block 'page_content'} */
 /* {block 'page_content_container'} */
-class Block_5944662135c53a5c6739a53_19999983 extends Smarty_Internal_Block
+class Block_15699215495c85f579c57e90_17813880 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'page_content_container' => 
   array (
-    0 => 'Block_5944662135c53a5c6739a53_19999983',
+    0 => 'Block_15699215495c85f579c57e90_17813880',
   ),
   'page_content' => 
   array (
-    0 => 'Block_3390842505c53a5c673aca4_93689546',
+    0 => 'Block_5012990635c85f579c59b23_42786101',
   ),
   'hook_home' => 
   array (
-    0 => 'Block_19687263675c53a5c673b835_56762602',
+    0 => 'Block_7188582805c85f579c5b424_26262430',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -95,7 +95,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
         <section id="content" class="page-home">
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3390842505c53a5c673aca4_93689546', 'page_content', $this->tplIndex);
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5012990635c85f579c59b23_42786101', 'page_content', $this->tplIndex);
 ?>
 
 
@@ -305,7 +305,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3390842505c53a5c67
         </div>
         <div class="social-section">
             <h2 class="title">Síguenos</h2>
-            <ul>
+            <ul class="lst-scl-foot">
                 <li>
                     <a href="https://www.facebook.com/BabaluFashionOficial/">
                         <img class="img-responsive" src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>

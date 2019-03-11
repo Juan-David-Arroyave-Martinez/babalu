@@ -77,8 +77,65 @@
                 <li><a href="#">VENTAS POR UNIDAD</a></li>
             </ul>
             <div class="minicart-wrapper">
-                <a href="#" class="shw-crt"><i class="material-icons shopping-cart cust-icart">shopping_cart</i> <span class="txt-ext">VER CARRITO</span></a>
-                <span class="cart-products-count cust-spin">0</span>
+                <a href="#" class="shw-crt"><i class="material-icons shopping-cart cust-icart">shopping_cart</i> <span class="txt-ext">VER CARRITO</span>
+                    <span class="cart-products-count cust-spin">0</span>
+                </a>
+                <div class="boxcard-minicart out-boxcard-minicart">
+                    <div class="cont-boscard-mincrt">
+                        <a class="cls-boscard-mincrt">Cerrar</a>
+                        <h2 class="tit-boscard-mincrt">Resumen Carrito</h2>
+                        <div class="box-ordinf">
+                            
+                            
+
+                            <section id="js-checkout-summary" class="card js-cart" data-refresh-url="{$urls.pages.cart}?ajax=1&action=refresh">
+                                <div class="card-block cont-smm-cust">
+                              
+                                  {block name='cart_summary_products'}
+                                    <div class="cart-summary-products">
+                              
+                                      {block name='cart_summary_product_list'}
+                                        <div class="" id="cart-summary-product-list">
+                                          <ul class="media-list">
+                                            {foreach from=$cart.products item=product}
+                                              <li class="lst-itm-prodcrt">{include file='checkout/_partials/cart-summary-product-line.tpl' product=$product}</li>
+                                            {/foreach}
+                                          </ul>
+                                        </div>
+                                      {/block}
+                                    </div>
+                                  {/block}
+                              
+                                  {block name='cart_summary_subtotals'}
+                                    {foreach from=$cart.subtotals item="subtotal"}
+                                      {if $subtotal && $subtotal.type !== 'tax'}
+                                        <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-{$subtotal.type}">
+                                          <span class="label">{$subtotal.label}</span>
+                                          <span class="value">{$subtotal.value}</span>
+                                        </div>
+                                      {/if}
+                                    {/foreach}
+                                  {/block}
+                              
+                                </div>
+                              
+                                {block name='cart_summary_voucher'}
+                                  {include file='checkout/_partials/cart-voucher.tpl'}
+                                {/block}
+
+                                <a href="" class="">Ver carrito</a>
+                                <a href="" class="">Seguir comprando</a>
+                                <a href="" class="">Finalizar compra</a>
+                              
+                              </section>
+
+
+                        </div>
+                        <div class="foot-boxcard-mncrt">
+                            RECUERDA QUE LAS COMPRAS MÍNIMAS DEBEN SER DE $ 400.000 COP EN COLOMBIA Y 600 USD FUERA DE COLOMBIA, EXCEPTO MÉXICO QUE ES DE 1000 USD.
+                        </div>
+                    </div>
+                </div>
             </div>
             <a href="#" class="search-mobl"><img src="{$urls.img_ps_url}/custom/msc-searcher.svg"></a>
             <button type="button" class="toggle-main-menu pull-left navbar-toggle collapsed srch-nav-mob"><div class="h-icon"><div></div><div></div><div></div></div><span>Menú</span></button>
@@ -119,5 +176,72 @@
 {/block}
 
 
+<div class="box-cont-polg">
+        <div class="lnks-optnls"><a href="{$urls.pages.cart}">carrito</a> 
+        <a href="{$urls.pages.history}">history</a>
+        <a href="{$urls.pages.my_account}"> cuenta</a>
+        <a href="{$urls.pages.order_confirmation}">order confirm</a>
+        <a href="{$urls.pages.order}">order</a>
+        <a href="{$urls.pages.register}">registro</a>
+        <a href="{$urls.pages.order_login}">login</a>
+    </div>
+    <div class="cont-pop-logn">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-left col-infsng">
+                <div class="card-inf-popsgn">
+                    <h2>INICIAR SESIÓN</h2>
+                    <section class="login-form">
+                            {block name='login_form'}
 
+                            {block name='login_form_errors'}
+                              {include file='_partials/form-errors.tpl' errors=$errors['']}
+                            {/block}
+                          
+                            <form id="login-form" action="{block name='login_form_actionurl'}{$action}{/block}" method="post">
+                          
+                              
+                          
+                              {block name='login_form_footer'}
+                                <footer class="form-footer text-sm-center clearfix">
+                                  <input type="hidden" name="submitLogin" value="1">
+                                  {block name='form_buttons'}
+                                    <a class="lnk-log-blank" href="{$urls.pages.my_account}">Entrar</a>
+                                  {/block}
+                                </footer>
+                              {/block}
 
+                              <section class="secc-login-form">
+                                    {block name='login_form_fields'}
+                                      {foreach from=$formFields item="field"}
+                                        {block name='form_field'}
+                                          {form_field field=$field}
+                                        {/block}
+                                      {/foreach}
+                                    {/block}
+                                    <div class="forgot-password">
+                                      <a href="{$urls.pages.password}" rel="nofollow" class="forgt-passwrd">
+                                        Olvide mi contraseña
+                                      </a>
+                                      <a href="{$urls.pages.register}" class="regstr-cslnk">
+                                        Aún no estoy registrado
+                                      </a>
+                                    </div>
+                                  </section>
+                          
+                            </form>
+                          {/block}
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 hidden-sm hidden-xs col-right col-imgsng">
+                <figure style="margin: 0px;">
+                    <img src="{$urls.img_ps_url}sign-in.jpg">
+                    <figcaption><h4>Babalú Fashion</h4><p>Prendas hechas con el mejor talento Colombiano</p></figcaption>
+                </figure>
+            </div>
+        </div>
+        <a class="cls-pooplgn">
+            <img src="{$urls.img_ps_url}x-icon.png">
+        </a>
+    </div>
+</div>

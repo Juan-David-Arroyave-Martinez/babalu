@@ -1,43 +1,228 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-01-31 22:31:39
+/* Smarty version 3.1.32, created on 2019-03-10 16:01:37
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c53bd9bab4ca3_91707100',
+  'unifunc' => 'content_5c857b31d5f685_43995514',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81fbfca9ad548363f32a03bed9d63181589fb211' => 
     array (
       0 => '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/_partials/header.tpl',
-      1 => 1547612926,
+      1 => 1552250715,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
+    'file:checkout/_partials/cart-summary-product-line.tpl' => 1,
+    'file:checkout/_partials/cart-voucher.tpl' => 1,
+    'file:checkout/_partials/cart-summary-totals.tpl' => 1,
+    'file:_partials/form-errors.tpl' => 1,
   ),
 ),false)) {
-function content_5c53bd9bab4ca3_91707100 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c857b31d5f685_43995514 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10028765535c53bd9baaeec6_89825050', 'header_banner');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3355134005c857b31d19954_99827173', 'header_banner');
 ?>
 
 
 
+<div class="box-cont-polg">
+        <div class="lnks-optnls"><a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['cart'], ENT_QUOTES, 'UTF-8');?>
+">carrito</a> 
+        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['history'], ENT_QUOTES, 'UTF-8');?>
+">history</a>
+        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['my_account'], ENT_QUOTES, 'UTF-8');?>
+"> cuenta</a>
+        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['order_confirmation'], ENT_QUOTES, 'UTF-8');?>
+">order confirm</a>
+        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['order'], ENT_QUOTES, 'UTF-8');?>
+">order</a>
+        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['register'], ENT_QUOTES, 'UTF-8');?>
+">registro</a>
+        <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['order_login'], ENT_QUOTES, 'UTF-8');?>
+">login</a>
+    </div>
+    <div class="cont-pop-logn">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-left col-infsng">
+                <div class="card-inf-popsgn">
+                    <h2>INICIAR SESIÓN</h2>
+                    <section class="login-form">
+                            <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13432836325c857b31d4a731_26818374', 'login_form');
+?>
 
-
+                    </section>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 hidden-sm hidden-xs col-right col-imgsng">
+                <figure style="margin: 0px;">
+                    <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>
+sign-in.jpg">
+                    <figcaption><h4>Babalú Fashion</h4><p>Prendas hechas con el mejor talento Colombiano</p></figcaption>
+                </figure>
+            </div>
+        </div>
+        <a class="cls-pooplgn">
+            <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>
+x-icon.png">
+        </a>
+    </div>
+</div>
 <?php }
+/* {block 'hook_checkout_summary_top'} */
+class Block_9111451695c857b31d26853_67554764 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                    <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0], array( array('h'=>'displayCheckoutSummaryTop'),$_smarty_tpl ) );?>
+
+                                  <?php
+}
+}
+/* {/block 'hook_checkout_summary_top'} */
+/* {block 'cart_summary_product_list'} */
+class Block_1223586085c857b31d2b983_60534383 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                        <div class="collapse" id="cart-summary-product-list">
+                                          <ul class="media-list">
+                                            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cart']->value['products'], 'product');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['product']->value) {
+?>
+                                              <li class="media"><?php $_smarty_tpl->_subTemplateRender('file:checkout/_partials/cart-summary-product-line.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('product'=>$_smarty_tpl->tpl_vars['product']->value), 0, true);
+?></li>
+                                            <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                                          </ul>
+                                        </div>
+                                      <?php
+}
+}
+/* {/block 'cart_summary_product_list'} */
+/* {block 'cart_summary_products'} */
+class Block_5754310185c857b31d28b08_53024971 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                    <div class="cart-summary-products">
+                              
+                                      <p><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart']->value['summary_string'], ENT_QUOTES, 'UTF-8');?>
+</p>
+                              
+                                      <p>
+                                        <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list">
+                                          <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['l'][0], array( array('s'=>'show details','d'=>'Shop.Theme.Actions'),$_smarty_tpl ) );?>
+
+                                        </a>
+                                      </p>
+                              
+                                      <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1223586085c857b31d2b983_60534383', 'cart_summary_product_list', $this->tplIndex);
+?>
+
+                                    </div>
+                                  <?php
+}
+}
+/* {/block 'cart_summary_products'} */
+/* {block 'cart_summary_subtotals'} */
+class Block_10440222675c857b31d31714_00871576 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['cart']->value['subtotals'], 'subtotal');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['subtotal']->value) {
+?>
+                                      <?php if ($_smarty_tpl->tpl_vars['subtotal']->value && $_smarty_tpl->tpl_vars['subtotal']->value['type'] !== 'tax') {?>
+                                        <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['subtotal']->value['type'], ENT_QUOTES, 'UTF-8');?>
+">
+                                          <span class="label"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['subtotal']->value['label'], ENT_QUOTES, 'UTF-8');?>
+</span>
+                                          <span class="value"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['subtotal']->value['value'], ENT_QUOTES, 'UTF-8');?>
+</span>
+                                        </div>
+                                      <?php }?>
+                                    <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                                  <?php
+}
+}
+/* {/block 'cart_summary_subtotals'} */
+/* {block 'cart_summary_voucher'} */
+class Block_17606913165c857b31d3ab14_24988176 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                  <?php $_smarty_tpl->_subTemplateRender('file:checkout/_partials/cart-voucher.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>
+                                <?php
+}
+}
+/* {/block 'cart_summary_voucher'} */
+/* {block 'cart_summary_totals'} */
+class Block_4657223335c857b31d3cd27_09561305 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                  <?php $_smarty_tpl->_subTemplateRender('file:checkout/_partials/cart-summary-totals.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('cart'=>$_smarty_tpl->tpl_vars['cart']->value), 0, false);
+?>
+                                <?php
+}
+}
+/* {/block 'cart_summary_totals'} */
 /* {block 'header_banner'} */
-class Block_10028765535c53bd9baaeec6_89825050 extends Smarty_Internal_Block
+class Block_3355134005c857b31d19954_99827173 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'header_banner' => 
   array (
-    0 => 'Block_10028765535c53bd9baaeec6_89825050',
+    0 => 'Block_3355134005c857b31d19954_99827173',
+  ),
+  'hook_checkout_summary_top' => 
+  array (
+    0 => 'Block_9111451695c857b31d26853_67554764',
+  ),
+  'cart_summary_products' => 
+  array (
+    0 => 'Block_5754310185c857b31d28b08_53024971',
+  ),
+  'cart_summary_product_list' => 
+  array (
+    0 => 'Block_1223586085c857b31d2b983_60534383',
+  ),
+  'cart_summary_subtotals' => 
+  array (
+    0 => 'Block_10440222675c857b31d31714_00871576',
+  ),
+  'cart_summary_voucher' => 
+  array (
+    0 => 'Block_17606913165c857b31d3ab14_24988176',
+  ),
+  'cart_summary_totals' => 
+  array (
+    0 => 'Block_4657223335c857b31d3cd27_09561305',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -109,8 +294,57 @@ es/3-outlet-mayorista">OUTLET MAYORISTA</a></li>
                 <li><a href="#">VENTAS POR UNIDAD</a></li>
             </ul>
             <div class="minicart-wrapper">
-                <a href="#" class="shw-crt"><i class="material-icons shopping-cart cust-icart">shopping_cart</i> <span class="txt-ext">VER CARRITO</span></a>
-                <span class="cart-products-count cust-spin">0</span>
+                <a href="#" class="shw-crt"><i class="material-icons shopping-cart cust-icart">shopping_cart</i> <span class="txt-ext">VER CARRITO</span>
+                    <span class="cart-products-count cust-spin">0</span>
+                </a>
+                <div class="boxcard-minicart out-boxcard-minicart">
+                    <div class="cont-boscard-mincrt">
+                        <a class="cls-boscard-mincrt">Cerrar</a>
+                        <h2 class="tit-boscard-mincrt">Resumen Carrito</h2>
+                        <div class="box-ordinf">
+                            
+
+                            <section id="js-checkout-summary" class="card js-cart" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['cart'], ENT_QUOTES, 'UTF-8');?>
+?ajax=1&action=refresh">
+                                <div class="card-block">
+                                  <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_9111451695c857b31d26853_67554764', 'hook_checkout_summary_top', $this->tplIndex);
+?>
+
+                              
+                                  <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5754310185c857b31d28b08_53024971', 'cart_summary_products', $this->tplIndex);
+?>
+
+                              
+                                  <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_10440222675c857b31d31714_00871576', 'cart_summary_subtotals', $this->tplIndex);
+?>
+
+                              
+                                </div>
+                              
+                                <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_17606913165c857b31d3ab14_24988176', 'cart_summary_voucher', $this->tplIndex);
+?>
+
+                              
+                                <hr class="separator">
+                              
+                                <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4657223335c857b31d3cd27_09561305', 'cart_summary_totals', $this->tplIndex);
+?>
+
+                              
+                              </section>
+
+
+                        </div>
+                        <div class="foot-boxcard-mncrt">
+                            RECUERDA QUE LAS COMPRAS MÍNIMAS DEBEN SER DE $ 400.000 COP EN COLOMBIA Y 600 USD FUERA DE COLOMBIA, EXCEPTO MÉXICO QUE ES DE 1000 USD.
+                        </div>
+                    </div>
+                </div>
             </div>
             <a href="#" class="search-mobl"><img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['img_ps_url'], ENT_QUOTES, 'UTF-8');?>
 /custom/msc-searcher.svg"></a>
@@ -153,4 +387,164 @@ es/3-outlet-mayorista">OUTLET MAYORISTA</a></li>
 }
 }
 /* {/block 'header_banner'} */
+/* {block 'login_form_errors'} */
+class Block_5112363075c857b31d4b4e7_59653433 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                              <?php $_smarty_tpl->_subTemplateRender('file:_partials/form-errors.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array('errors'=>$_smarty_tpl->tpl_vars['errors']->value['']), 0, false);
+?>
+                            <?php
+}
+}
+/* {/block 'login_form_errors'} */
+/* {block 'login_form_actionurl'} */
+class Block_21210720395c857b31d4e347_74241051 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+echo htmlspecialchars($_smarty_tpl->tpl_vars['action']->value, ENT_QUOTES, 'UTF-8');
+}
+}
+/* {/block 'login_form_actionurl'} */
+/* {block 'form_buttons'} */
+class Block_4516098965c857b31d50a72_95193177 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                    <a class="lnk-log-blank" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['my_account'], ENT_QUOTES, 'UTF-8');?>
+">Entrar</a>
+                                  <?php
+}
+}
+/* {/block 'form_buttons'} */
+/* {block 'login_form_footer'} */
+class Block_4993697135c857b31d4fce8_90500123 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                <footer class="form-footer text-sm-center clearfix">
+                                  <input type="hidden" name="submitLogin" value="1">
+                                  <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4516098965c857b31d50a72_95193177', 'form_buttons', $this->tplIndex);
+?>
+
+                                </footer>
+                              <?php
+}
+}
+/* {/block 'login_form_footer'} */
+/* {block 'form_field'} */
+class Block_20531290475c857b31d56ca0_90653049 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                          <?php echo call_user_func_array( $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['form_field'][0], array( array('field'=>$_smarty_tpl->tpl_vars['field']->value),$_smarty_tpl ) );?>
+
+                                        <?php
+}
+}
+/* {/block 'form_field'} */
+/* {block 'login_form_fields'} */
+class Block_8534792275c857b31d53b50_22188469 extends Smarty_Internal_Block
+{
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+                                      <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['formFields']->value, 'field');
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['field']->value) {
+?>
+                                        <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_20531290475c857b31d56ca0_90653049', 'form_field', $this->tplIndex);
+?>
+
+                                      <?php
+}
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                                    <?php
+}
+}
+/* {/block 'login_form_fields'} */
+/* {block 'login_form'} */
+class Block_13432836325c857b31d4a731_26818374 extends Smarty_Internal_Block
+{
+public $subBlocks = array (
+  'login_form' => 
+  array (
+    0 => 'Block_13432836325c857b31d4a731_26818374',
+  ),
+  'login_form_errors' => 
+  array (
+    0 => 'Block_5112363075c857b31d4b4e7_59653433',
+  ),
+  'login_form_actionurl' => 
+  array (
+    0 => 'Block_21210720395c857b31d4e347_74241051',
+  ),
+  'login_form_footer' => 
+  array (
+    0 => 'Block_4993697135c857b31d4fce8_90500123',
+  ),
+  'form_buttons' => 
+  array (
+    0 => 'Block_4516098965c857b31d50a72_95193177',
+  ),
+  'login_form_fields' => 
+  array (
+    0 => 'Block_8534792275c857b31d53b50_22188469',
+  ),
+  'form_field' => 
+  array (
+    0 => 'Block_20531290475c857b31d56ca0_90653049',
+  ),
+);
+public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
+?>
+
+
+                            <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_5112363075c857b31d4b4e7_59653433', 'login_form_errors', $this->tplIndex);
+?>
+
+                          
+                            <form id="login-form" action="<?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_21210720395c857b31d4e347_74241051', 'login_form_actionurl', $this->tplIndex);
+?>
+" method="post">
+                          
+                              
+                          
+                              <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4993697135c857b31d4fce8_90500123', 'login_form_footer', $this->tplIndex);
+?>
+
+
+                              <section class="secc-login-form">
+                                    <?php 
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_8534792275c857b31d53b50_22188469', 'login_form_fields', $this->tplIndex);
+?>
+
+                                    <div class="forgot-password">
+                                      <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['password'], ENT_QUOTES, 'UTF-8');?>
+" rel="nofollow" class="forgt-passwrd">
+                                        Olvide mi contraseña
+                                      </a>
+                                      <a href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['urls']->value['pages']['register'], ENT_QUOTES, 'UTF-8');?>
+" class="regstr-cslnk">
+                                        Aún no estoy registrado
+                                      </a>
+                                    </div>
+                                  </section>
+                          
+                            </form>
+                          <?php
+}
+}
+/* {/block 'login_form'} */
 }

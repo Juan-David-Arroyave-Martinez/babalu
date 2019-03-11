@@ -24,10 +24,6 @@
  *}
 {extends file='page.tpl'}
 
-{block name='page_title'}
-  {l s='Forgot your password?' d='Shop.Theme.Customeraccount'}
-{/block}
-
 {block name='page_content'}
   <form action="{$urls.pages.password}" class="forgotten-password" method="post">
 
@@ -44,30 +40,30 @@
       {/foreach}
     </ul>
 
-    <header>
-      <p class="send-renew-password-link">{l s='Please enter the email address you used to register. You will receive a temporary link to reset your password.' d='Shop.Theme.Customeraccount'}</p>
-    </header>
+    <div class="blk-forgt">
+      <h2 class="tit-blk-forgt">RECUPERAR CUENTA</h2>
 
-    <section class="form-fields">
-      <div class="form-group center-email-fields">
-        <label class="col-md-3 form-control-label required">{l s='Email address' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-5 email">
-          <input type="email" name="email" id="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes}{/if}" class="form-control" required>
+      <section class="form-fields">
+        <div class="form-group center-email-fields flds-cust-forgt">
+          <label class="col-md-3 form-control-label required lbl-cust-forgt">CORREO ELECTRÓNICO</label>
+          <div class="email">
+            <input type="email" name="email" id="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes}{/if}" class="form-control inpt-mlfrg-cust" required>
+          </div>
+          <button class="form-control-submit btn btn-primary hidden-xs-down btsnd-cust-frgt" name="submit" type="submit">
+            RECUPERAR
+          </button>
+          <button class="form-control-submit btn btn-primary hidden-sm-up btsnd-cust-frgt" name="submit" type="submit">
+            {l s='Send' d='Shop.Theme.Actions'}
+          </button>
         </div>
-        <button class="form-control-submit btn btn-primary hidden-xs-down" name="submit" type="submit">
-          {l s='Send reset link' d='Shop.Theme.Actions'}
-        </button>
-        <button class="form-control-submit btn btn-primary hidden-sm-up" name="submit" type="submit">
-          {l s='Send' d='Shop.Theme.Actions'}
-        </button>
-      </div>
-    </section>
+      </section>
+    </div>
 
   </form>
 {/block}
 
 {block name='page_footer'}
-  <a href="{$urls.pages.my_account}" class="account-link">
+  <a href="{$urls.pages.my_account}" class="account-link bklg-cust-frgt">
     <i class="material-icons">&#xE5CB;</i>
     <span>{l s='Back to login' d='Shop.Theme.Actions'}</span>
   </a>

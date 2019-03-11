@@ -3523,7 +3523,7 @@
   ),
   'Product' => 
   array (
-    'path' => '',
+    'path' => 'override/classes/Product.php',
     'type' => 'class',
     'override' => false,
   ),
@@ -3541,8 +3541,8 @@
   ),
   'ProductController' => 
   array (
-    'path' => '',
-    'type' => 'class',
+    'path' => 'override/controllers/front/ProductController.php',
+    'type' => 'Class',
     'override' => false,
   ),
   'ProductControllerCore' => 

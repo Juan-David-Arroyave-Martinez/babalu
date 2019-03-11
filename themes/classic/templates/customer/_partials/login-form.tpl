@@ -30,7 +30,7 @@
 
   <form id="login-form" action="{block name='login_form_actionurl'}{$action}{/block}" method="post">
 
-    <section>
+    <section class="secc-login-form">
       {block name='login_form_fields'}
         {foreach from=$formFields item="field"}
           {block name='form_field'}

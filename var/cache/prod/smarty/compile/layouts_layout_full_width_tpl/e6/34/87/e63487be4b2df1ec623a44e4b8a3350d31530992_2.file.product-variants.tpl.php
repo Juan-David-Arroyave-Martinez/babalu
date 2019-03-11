@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.32, created on 2019-02-01 00:35:51
+/* Smarty version 3.1.32, created on 2019-03-11 00:49:40
   from '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/catalog/_partials/product-variants.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.32',
-  'unifunc' => 'content_5c53dab7d08d30_77048135',
+  'unifunc' => 'content_5c85f6f4ba5a26_35718292',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e63487be4b2df1ec623a44e4b8a3350d31530992' => 
     array (
       0 => '/home4/makemark/public_html/makemark/babalu_prestashop/themes/classic/templates/catalog/_partials/product-variants.tpl',
-      1 => 1548296808,
+      1 => 1549132884,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c53dab7d08d30_77048135 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c85f6f4ba5a26_35718292 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <?php echo '<script'; ?>
  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"><?php echo '</script'; ?>
 >
@@ -95,6 +95,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </select>
         
         <?php } elseif ($_smarty_tpl->tpl_vars['group']->value['group_type'] == 'radio') {?>
+        <span class="swtch-attr-selected-tll"></span>
           <ul class="lst-variant" id="group_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
 ">
             <?php
@@ -103,8 +104,9 @@ if ($_from !== null) {
 foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute']->value => $_smarty_tpl->tpl_vars['group_attribute']->value) {
 ?>
               <li class="input-container float-xs-left">
-                <label>
-                  <input class="input-radio" type="radio" data-product-attribute="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
+                <label class="lbl-cust-tll">
+                  <input class="input-radio inpt-cust-tll <?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['selected']) {?>opt-tll-slctd<?php }?>" type="radio" data-variantname="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['group_attribute']->value['name'], ENT_QUOTES, 'UTF-8');?>
+" data-product-attribute="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
 " name="group[<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute_group']->value, ENT_QUOTES, 'UTF-8');?>
 ]" value="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_attribute']->value, ENT_QUOTES, 'UTF-8');?>
 "<?php if ($_smarty_tpl->tpl_vars['group_attribute']->value['selected']) {?> checked="checked"<?php }?>>
@@ -117,6 +119,15 @@ foreach ($_from as $_smarty_tpl->tpl_vars['id_attribute']->value => $_smarty_tpl
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
           </ul>
+          <?php echo '<script'; ?>
+>
+            if($(".opt-tll-slctd").attr("data-variantname") == "U"){
+              $(".swtch-attr-selected-tll").html("Única");
+            }else{
+              $(".swtch-attr-selected-tll").html($(".opt-tll-slctd").attr("data-variantname"));
+            }
+            <?php echo '</script'; ?>
+>
         <?php }?>
       </div>
       <?php }?>
